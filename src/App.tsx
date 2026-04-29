@@ -1,5 +1,8 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import { HashRouter, Route, Routes, useLocation } from 'react-router-dom'
+import { Footer } from './components/ui/Footer'
+import { Navbar } from './components/ui/Navbar'
+import { Contact } from './pages/Contact'
 import { Freelance } from './pages/Freelance'
 import { Home } from './pages/Home'
 import { Projects } from './pages/Projects'
@@ -23,12 +26,13 @@ function AnimatedRoutes() {
         initial="initial"
         animate="animate"
         exit="exit"
-        transition={{ duration: 0.2, ease: 'easeOut' }}
+        transition={{ duration: 0.12, ease: 'easeOut' }}
       >
         <Routes location={location}>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/freelance" element={<Freelance />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </motion.div>
@@ -39,7 +43,11 @@ function AnimatedRoutes() {
 function App() {
   return (
     <HashRouter>
-      <AnimatedRoutes />
+      <Navbar />
+      <main className="pt-20">
+        <AnimatedRoutes />
+      </main>
+      <Footer />
     </HashRouter>
   )
 }

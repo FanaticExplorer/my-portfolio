@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { Menu, X } from 'lucide-react'
+import { Briefcase, FolderGit2, Home, Mail, Menu, X } from 'lucide-react'
 
-const navLinkBase = 'text-sm uppercase tracking-wide transition-colors'
+const navLinkBase = 'inline-flex items-center gap-2 text-sm uppercase tracking-wide transition-colors'
 
 const getNavLinkClass = ({ isActive }: { isActive: boolean }) =>
   `${navLinkBase} ${
@@ -26,13 +26,20 @@ export function Navbar() {
         </div>
         <nav className="hidden items-center gap-6 md:flex">
           <NavLink to="/" className={getNavLinkClass}>
+            <Home className="h-4 w-4 shrink-0" strokeWidth={1.8} />
             Главная
           </NavLink>
           <NavLink to="/projects" className={getNavLinkClass}>
+            <FolderGit2 className="h-4 w-4 shrink-0" strokeWidth={1.8} />
             Проекты
           </NavLink>
           <NavLink to="/freelance" className={getNavLinkClass}>
+            <Briefcase className="h-4 w-4 shrink-0" strokeWidth={1.8} />
             Фриланс
+          </NavLink>
+          <NavLink to="/contact" className={getNavLinkClass}>
+            <Mail className="h-4 w-4 shrink-0" strokeWidth={1.8} />
+            Контакты
           </NavLink>
         </nav>
         <button
@@ -41,7 +48,7 @@ export function Navbar() {
           aria-label="Открыть меню"
           onClick={() => setIsOpen(true)}
         >
-          <Menu size={18} />
+          <Menu className="h-[18px] w-[18px]" strokeWidth={1.8} />
         </button>
       </div>
       <div
@@ -57,11 +64,12 @@ export function Navbar() {
             aria-label="Закрыть меню"
             onClick={() => setIsOpen(false)}
           >
-            <X size={18} />
+            <X className="h-[18px] w-[18px]" strokeWidth={1.8} />
           </button>
         </div>
         <nav className="flex flex-col gap-4 px-6 py-6">
           <NavLink to="/" className={getNavLinkClass} onClick={() => setIsOpen(false)}>
+            <Home className="h-4 w-4 shrink-0" strokeWidth={1.8} />
             Главная
           </NavLink>
           <NavLink
@@ -69,6 +77,7 @@ export function Navbar() {
             className={getNavLinkClass}
             onClick={() => setIsOpen(false)}
           >
+            <FolderGit2 className="h-4 w-4 shrink-0" strokeWidth={1.8} />
             Проекты
           </NavLink>
           <NavLink
@@ -76,7 +85,16 @@ export function Navbar() {
             className={getNavLinkClass}
             onClick={() => setIsOpen(false)}
           >
+            <Briefcase className="h-4 w-4 shrink-0" strokeWidth={1.8} />
             Фриланс
+          </NavLink>
+          <NavLink
+            to="/contact"
+            className={getNavLinkClass}
+            onClick={() => setIsOpen(false)}
+          >
+            <Mail className="h-4 w-4 shrink-0" strokeWidth={1.8} />
+            Контакты
           </NavLink>
         </nav>
       </div>

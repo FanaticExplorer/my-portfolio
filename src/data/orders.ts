@@ -28,7 +28,7 @@ export const orders: Order[] = [
     description:
       'Создать консольное приложение на Python для проверки наличия аккаунтов в указанной группе Discord.',
     category: 'Discord',
-    techs: ['Python', 'Discord User API'],
+    techs: ['Python', 'Discord API', 'requests'],
     rating: 10,
     review: '"Чекер працює, завдання виконано успішно. Рекомендую!"',
     completedAt: 'Июль 2023',
@@ -62,7 +62,7 @@ export const orders: Order[] = [
     description:
       'Автоматический постинг на Reddit с привязкой к таблице и дальнейшей накруткой апвоутов через внешний API.',
     category: 'Reddit',
-    techs: ['Python', 'PRAW', 'APScheduler', 'REST API'],
+    techs: ['Python', 'PRAW', 'Reddit'],
     rating: 10,
     review:
       '"Дякую за професійно і оперативно виконане завдання! Окремо хочу відзначити відмінну комунікацію і швидкість роботи. Рекомендую до співпраці!"',
@@ -104,7 +104,7 @@ export const orders: Order[] = [
     id: 'binance-auth-bypass',
     title: 'Парсинг страницы Binance с обходом авторизации',
     description:
-      'Скрипт, который позволяет видеть позиции трейдера на странице Binance Futures Leaderboard, обходя требование авторизации.',
+      'Реверс-инженеринг страницы Binance Futures Leaderboard без авторизации.',
     category: 'Binance',
     techs: ['DevTools'],
     rating: 10,
@@ -116,9 +116,9 @@ export const orders: Order[] = [
     id: 'telegram-chatgpt-userbot',
     title: 'Реалистичный userbot-собеседник с ChatGPT',
     description:
-      'Юзербот, который ведет себя максимально похоже на реального человека и консультирует по возможностям компании.',
+      'Telegram юзербот, который ведет себя максимально похоже на реального человека и консультирует по возможностям компании.',
     category: 'Telegram',
-    techs: ['pyrogram', 'OpenAI API', 'gpt-3.5-turbo', 'JSON'],
+    techs: ['pyrogram', 'OpenAI API'],
     rating: 10,
     review: '"Все зроблено чудово, рекомендую!"',
     completedAt: 'Март 2024',
@@ -149,7 +149,7 @@ export const orders: Order[] = [
     description:
       'Срочный запуск готовой программы на сервере заказчика после исчезновения предыдущего исполнителя.',
     category: 'Server',
-    techs: [],
+    techs: ['Linux', 'SSH'],
     rating: 10,
     review: '"Рекомендую. Пише по ділу, робить швидко"',
     completedAt: 'Июль 2024',
@@ -158,9 +158,9 @@ export const orders: Order[] = [
     id: 'telegram-captcha-free-groups',
     title: 'Бот для поиска групп без капчи',
     description:
-      'Автоматизированный поиск каналов/групп для рассылок, исключая те, где стоит капча.',
+      'Автоматизированный поиск Telegram-каналов/групп для рассылок, исключая те, где стоит капча.',
     category: 'Telegram',
-    techs: ['pyrogram', 'gpt-4o-mini'],
+    techs: ['pyrogram', ],
     rating: 10,
     review:
       '"Задача з зірочкою , але замовлення виконано успішно. Дякую"',

@@ -10,7 +10,7 @@ npm install && npm run dev
 
 Замените `YOUR_FORMSPREE_ID` в форме на свой ID:
 
-- `src/pages/Freelance.tsx` → `https://formspree.io/f/YOUR_FORMSPREE_ID`
+- `src/pages/Contact.tsx` → `https://formspree.io/f/YOUR_FORMSPREE_ID`
 
 ## Сборка и деплой
 

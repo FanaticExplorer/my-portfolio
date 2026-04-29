@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import { Github } from 'lucide-react'
 import { Badge } from '../components/ui/Badge'
 import { Card } from '../components/ui/Card'
 import { projects } from '../data/projects'
@@ -15,12 +16,6 @@ const filters: Array<{ key: FilterKey; label: string }> = [
   { key: 'other', label: 'Другое' },
 ]
 
-const getStatusIcon = (status: string) => {
-  if (status.includes('⚠️')) return '⚠️'
-  if (status.includes('🎓')) return '🎓'
-  return '✅'
-}
-
 export function Projects() {
   const [activeFilter, setActiveFilter] = useState<FilterKey>('all')
 
@@ -30,8 +25,8 @@ export function Projects() {
   }, [activeFilter])
 
   return (
-    <section className="min-h-screen bg-[#0e0e0e] px-6 py-24 text-[#f0f0f0]">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-10">
+    <section className="min-h-screen bg-[#0e0e0e] px-6 py-16 text-[#f0f0f0]">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-7">
         <div>
           <h1
             className="text-3xl font-semibold md:text-4xl"
@@ -65,22 +60,28 @@ export function Projects() {
         </div>
 
         <AnimatePresence mode="popLayout">
-          <motion.div layout className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <motion.div layout className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
             {filteredProjects.map((project) => (
               <motion.div
                 key={project.id}
                 layout
-                initial={{ opacity: 0, y: 18 }}
+                initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 18 }}
-                transition={{ duration: 0.25, ease: 'easeOut' }}
+                exit={{ opacity: 0, y: 12 }}
+                transition={{ duration: 0.15, ease: 'easeOut' }}
               >
-                <Card className="flex h-full flex-col gap-4 p-6">
+                <Card className="flex h-full flex-col gap-4 p-5">
                   <div className="flex items-start justify-between gap-3">
-                    <div className="flex items-center gap-2">
-                      <span className="text-xl">{getStatusIcon(project.status)}</span>
-                      <h3 className="text-lg font-semibold">{project.title}</h3>
-                    </div>
+                    <h3 className="text-lg font-semibold">{project.title}</h3>
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`GitHub: ${project.title}`}
+                      className="rounded-full border border-[#2a2a2a] bg-[#151515] p-2 text-[#e8b84b] transition hover:border-[#e8b84b]"
+                    >
+                      <Github className="h-4 w-4" />
+                    </a>
                   </div>
                   <p
                     className="text-sm text-[#888888]"
@@ -97,21 +98,6 @@ export function Projects() {
                     {project.techs.map((tech) => (
                       <Badge key={`${project.id}-${tech}`} label={tech} variant="tech" />
                     ))}
-                  </div>
-                  <div className="mt-auto flex items-center justify-between gap-3">
-                    <span className="text-xs uppercase tracking-[0.3em] text-[#888888]">
-                      {project.status}
-                    </span>
-                    {project.githubUrl ? (
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-sm font-semibold text-[#e8b84b]"
-                      >
-                        GitHub
-                      </a>
-                    ) : null}
                   </div>
                 </Card>
               </motion.div>

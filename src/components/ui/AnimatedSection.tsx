@@ -4,14 +4,13 @@ import { motion } from 'framer-motion'
 export interface AnimatedSectionProps extends ComponentPropsWithoutRef<'section'> {}
 
 const containerVariants = {
-  hidden: { opacity: 0, y: 20 },
+  hidden: { opacity: 0, y: 12 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.4,
+      duration: 0.25,
       ease: 'easeOut',
-      staggerChildren: 0.12,
     },
   },
 }
