@@ -7,7 +7,6 @@ export interface Project {
   category: ProjectCategory
   techs: string[]
   githubUrl: string
-  isDeprecated: boolean
   isFeatured: boolean
 }
 
@@ -18,9 +17,8 @@ export const projects: Project[] = [
     description:
       'Конфигурируемый бот для Discord для управления само-назначаемыми ролями.',
     category: 'bots',
-    techs: ['Python', 'Pycord', 'PyYAML', 'Loguru', 'python-dotenv'],
+    techs: ['Python', 'Pycord', 'PyYAML', 'Loguru'],
     githubUrl: 'https://github.com/FanaticExplorer/SuperRoleManager',
-    isDeprecated: false,
     isFeatured: true,
   },
   {
@@ -29,30 +27,27 @@ export const projects: Project[] = [
     description:
       'Инструмент для скачивания эмодзи и стикеров с публичных Discord серверов.',
     category: 'bots',
-    techs: ['Python'],
+    techs: ['Python', 'CLI'],
     githubUrl: 'https://github.com/FanaticExplorer/EmojiesParser',
-    isDeprecated: false,
     isFeatured: false,
   },
   {
     id: 'myinstantsapi-py',
     title: 'MyinstantsAPI-py',
     description:
-      'Неофициальный FastAPI-клиент для сайта MyInstants (звуковая доска).',
+      'Неофициальный FastAPI-клиент для сайта MyInstants.',
     category: 'bots',
     techs: ['Python', 'FastAPI'],
     githubUrl: 'https://github.com/FanaticExplorer/MyinstantsAPI-py',
-    isDeprecated: false,
     isFeatured: false,
   },
   {
     id: 'window-manager',
     title: 'WindowManager',
-    description: 'Легковесная утилита для управления окнами Windows из командной строки.',
+    description: 'Утилита для управления окнами Windows из командной строки.',
     category: 'desktop',
-    techs: ['Python', 'Go (план)'],
+    techs: ['Python', 'Windows'],
     githubUrl: 'https://github.com/FanaticExplorer/WindowManager',
-    isDeprecated: false,
     isFeatured: false,
   },
   {
@@ -60,9 +55,8 @@ export const projects: Project[] = [
     title: 'SayClip-legacy',
     description: 'Приложение для преобразования речи в текст с использованием Whisper и WebView.',
     category: 'desktop',
-    techs: ['Python', 'JavaScript', 'CSS', 'HTML'],
+    techs: ['Python', 'JavaScript', 'CSS', 'HTML', 'OpenAI API', 'Whisper', 'WebView'],
     githubUrl: 'https://github.com/FanaticExplorer/SayClip-legacy',
-    isDeprecated: true,
     isFeatured: false,
   },
   {
@@ -70,9 +64,8 @@ export const projects: Project[] = [
     title: 'WatermarkWizard',
     description: 'Простая программа для добавления водяных знаков на изображения.',
     category: 'desktop',
-    techs: ['Python', 'tkinter'],
+    techs: ['Python', 'CustomTkinter', 'Pillow'],
     githubUrl: 'https://github.com/FanaticExplorer/WatermarkWizard',
-    isDeprecated: false,
     isFeatured: false,
   },
   {
@@ -81,30 +74,27 @@ export const projects: Project[] = [
     description:
       'Семестровый проект для курса "Фронтенд-технологии". SPA-приложение с подборкой лайфхаков для продуктивности.',
     category: 'web',
-    techs: ['Vue 3 (Options API)', 'Pinia', 'Vue Router', 'Vuetify 3', 'Vite'],
+    techs: ['Vue', 'Vuetify 3', 'Vite', 'Node.js'],
     githubUrl: 'https://github.com/FanaticExplorer/LifehackHub',
-    isDeprecated: false,
     isFeatured: false,
   },
   {
     id: 'genius-cleaner',
     title: 'GeniusCleaner',
     description:
-      'Расширение для Firefox, которое убирает аннотации, всплывающие окна и подсветку с Genius.com, оставляя только чистый текст песен.',
+      'Расширение для Firefox, которое убирает лишнее с Genius.com, оставляя только чистый текст песен.',
     category: 'web',
     techs: ['JavaScript', 'HTML'],
     githubUrl: 'https://github.com/FanaticExplorer/GeniusCleaner',
-    isDeprecated: false,
     isFeatured: true,
   },
   {
     id: 'pear-cleaner',
     title: 'PearCleaner',
-    description: 'Генератор CSS для кастомизации YouTube Music в приложении Pear.',
+    description: 'Генератор CSS для кастомизации Pear Desktop.',
     category: 'web',
     techs: ['HTML', 'CSS', 'JavaScript'],
     githubUrl: 'https://github.com/FanaticExplorer/PearCleaner',
-    isDeprecated: false,
     isFeatured: false,
   },
   {
@@ -113,20 +103,18 @@ export const projects: Project[] = [
     description:
       'Продвинутый плагин для OBS Studio, который автоматически конвертирует записи и реплеи через FFmpeg.',
     category: 'other',
-    techs: ['Python', 'FFmpeg'],
+    techs: ['Python', 'FFmpeg', 'OBS Studio'],
     githubUrl: 'https://github.com/FanaticExplorer/RecordingConverter',
-    isDeprecated: false,
     isFeatured: true,
   },
   {
     id: 'uni-nfl-fantasy-dwh',
     title: 'uni-nfl-fantasy-dwh',
     description:
-      'Реализация ELT-процесса и создание Data Warehouse по методологии Kimball для датасета NFL Fantasy Football из Snowflake Marketplace.',
+      'Реализация ELT-процесса и создание Data Warehouse по методологии Kimball для датасета.',
     category: 'data',
     techs: ['SQL (Snowflake)'],
     githubUrl: 'https://github.com/FanaticExplorer/uni-nfl-fantasy-dwh',
-    isDeprecated: false,
     isFeatured: false,
   },
   {
@@ -136,7 +124,6 @@ export const projects: Project[] = [
     category: 'other',
     techs: ['Python'],
     githubUrl: 'https://github.com/FanaticExplorer/easymsgbox',
-    isDeprecated: false,
     isFeatured: false,
   },
   {
@@ -145,9 +132,8 @@ export const projects: Project[] = [
     description:
       'Программа "на коленке за час", которая переводила текст презентации с одного языка на другой (со словацкого на английский).',
     category: 'other',
-    techs: ['Python', 'CustomTkinter (возможно)'],
+    techs: ['Python', 'CustomTkinter'],
     githubUrl: 'https://github.com/FanaticExplorer/PresentationsTranslator',
-    isDeprecated: false,
     isFeatured: false,
   },
   {
@@ -157,7 +143,6 @@ export const projects: Project[] = [
     category: 'other',
     techs: ['Python'],
     githubUrl: 'https://github.com/FanaticExplorer/LRCDiscordSync',
-    isDeprecated: false,
     isFeatured: false,
   },
   {
@@ -167,7 +152,6 @@ export const projects: Project[] = [
     category: 'other',
     techs: ['Python', 'Flet'],
     githubUrl: 'https://github.com/FanaticExplorer/QRCode_Generator',
-    isDeprecated: false,
     isFeatured: false,
   },
 ]

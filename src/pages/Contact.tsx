@@ -7,18 +7,17 @@ export function Contact() {
             className="text-3xl font-semibold md:text-4xl"
             style={{ fontFamily: 'var(--font-heading)' }}
           >
-            Заказать разработку
+            Контакты
           </h1>
           <p className="mt-3 text-[#888888]">
-            Опишите задачу, и я вернусь с уточнениями по срокам и стоимости.
+            Напишите о задаче, сроках и бюджете. Обычно отвечаю в течение 24-48 часов.
           </p>
         </div>
 
         <div className="grid gap-6 lg:grid-cols-[2fr,1fr]">
           <div className="flex flex-col gap-6">
-            {/* Замени YOUR_FORMSPREE_ID на свой ID с formspree.io */}
             <form
-              action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+              action="https://formspree.io/f/xeenjoyz"
               method="POST"
               className="grid gap-4"
             >
@@ -35,20 +34,10 @@ export function Contact() {
                 className="rounded-xl border border-[#2a2a2a] bg-[#161616] px-4 py-3 text-sm text-[#f0f0f0]"
                 required
               />
-              <select
-                name="task"
-                className="rounded-xl border border-[#2a2a2a] bg-[#161616] px-4 py-3 text-sm text-[#f0f0f0]"
-                required
-              >
-                <option value="Бот Discord">Бот Discord</option>
-                <option value="Скрипт">Скрипт</option>
-                <option value="Расширение">Расширение</option>
-                <option value="Другое">Другое</option>
-              </select>
               <textarea
                 name="details"
                 rows={5}
-                placeholder="Описание"
+                placeholder="Кратко опишите задачу, сроки и бюджет"
                 className="rounded-xl border border-[#2a2a2a] bg-[#161616] px-4 py-3 text-sm text-[#f0f0f0]"
                 required
               />
