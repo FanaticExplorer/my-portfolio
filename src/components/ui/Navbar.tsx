@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Briefcase, FolderGit2, Home, Mail, Menu, X } from 'lucide-react'
 
@@ -14,8 +14,17 @@ const getNavLinkClass = ({ isActive }: { isActive: boolean }) =>
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
+  useEffect(() => {
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = isOpen ? 'hidden' : previousOverflow
+
+    return () => {
+      document.body.style.overflow = previousOverflow
+    }
+  }, [isOpen])
+
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-[#2a2a2a] bg-[#0e0e0e]/90 backdrop-blur">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-[#2a2a2a] bg-[#0e0e0e] md:bg-[#0e0e0e]/90 md:backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
         <div
           className="text-lg font-semibold"
@@ -48,7 +57,7 @@ export function Navbar() {
           aria-label="Открыть меню"
           onClick={() => setIsOpen(true)}
         >
-          <Menu className="h-[18px] w-[18px]" strokeWidth={1.8} />
+          <Menu className="h-4.5 w-4.5" strokeWidth={1.8} />
         </button>
       </div>
       <div
@@ -64,7 +73,7 @@ export function Navbar() {
             aria-label="Закрыть меню"
             onClick={() => setIsOpen(false)}
           >
-            <X className="h-[18px] w-[18px]" strokeWidth={1.8} />
+            <X className="h-4.5 w-4.5" strokeWidth={1.8} />
           </button>
         </div>
         <nav className="flex flex-col gap-4 px-6 py-6">
@@ -101,7 +110,7 @@ export function Navbar() {
       {isOpen ? (
         <button
           type="button"
-          className="fixed inset-0 z-40 bg-black/40 md:hidden"
+          className="fixed inset-0 z-40 bg-[#0e0e0e] md:hidden"
           aria-label="Закрыть меню"
           onClick={() => setIsOpen(false)}
         />

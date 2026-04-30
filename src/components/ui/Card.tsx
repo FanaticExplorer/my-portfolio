@@ -1,7 +1,6 @@
-import type { ComponentPropsWithoutRef } from 'react'
-import { motion } from 'framer-motion'
+import { motion, type HTMLMotionProps } from 'framer-motion'
 
-export interface CardProps extends ComponentPropsWithoutRef<'div'> {}
+export interface CardProps extends HTMLMotionProps<'div'> {}
 
 export function Card({ className = '', ...props }: CardProps) {
   return (

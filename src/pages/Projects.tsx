@@ -102,7 +102,7 @@ export function Projects() {
                     className="text-sm text-[#888888]"
                     style={{
                       display: '-webkit-box',
-                      WebkitLineClamp: 3,
+                      WebkitLineClamp: 10,
                       WebkitBoxOrient: 'vertical',
                       overflow: 'hidden',
                     }}

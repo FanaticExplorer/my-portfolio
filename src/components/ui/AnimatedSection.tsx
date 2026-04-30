@@ -1,16 +1,15 @@
-import type { ComponentPropsWithoutRef } from 'react'
-import { motion } from 'framer-motion'
+import { motion, type HTMLMotionProps, type Variants } from 'framer-motion'
 
-export interface AnimatedSectionProps extends ComponentPropsWithoutRef<'section'> {}
+export interface AnimatedSectionProps extends HTMLMotionProps<'section'> {}
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0, y: 12 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.25,
-      ease: 'easeOut',
+      ease: 'easeOut' as const,
     },
   },
 }

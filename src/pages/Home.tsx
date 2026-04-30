@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { motion } from 'framer-motion'
+import { motion, type Variants } from 'framer-motion'
 import { ArrowUpRight, Briefcase, FolderGit2 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { AnimatedSection } from '../components/ui/AnimatedSection'
@@ -8,9 +8,13 @@ import { Card } from '../components/ui/Card'
 import { orders, type Order } from '../data/orders'
 import { projects } from '../data/projects'
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 16 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.2, ease: 'easeOut' } },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.2, ease: 'easeOut' as const },
+  },
 }
 
 const featuredProjects = projects.filter((project) => project.isFeatured).slice(0, 3)
@@ -160,9 +164,9 @@ export function Home() {
       <AnimatedSection
         className="relative -mt-20 flex min-h-[70vh] items-center overflow-hidden px-6 pt-20"
       >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(232,184,75,0.08),_transparent_55%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(232,184,75,0.08),transparent_55%)]" />
         <ParticleField />
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-b from-transparent via-[#0e0e0e]/60 to-[#0e0e0e]" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-linear-to-b from-transparent via-[#0e0e0e]/60 to-[#0e0e0e]" />
         <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col gap-6 py-16">
           <motion.div variants={itemVariants} className="max-w-3xl">
             <p className="mb-4 text-sm uppercase tracking-[0.4em] text-[#888888]">
@@ -176,6 +180,10 @@ export function Home() {
               <br />
               Я помогаю им <span className="text-[#e8b84b]">работать на вас</span>.
             </h1>
+            <p className="mt-4 text-base leading-relaxed text-[#b5b5b5] md:text-lg">
+              Python-разработчик, специализируюсь на ботах, парсинге и автоматизации.
+              Пишу код, который решает задачи, а не создаёт новые.
+            </p>
           </motion.div>
           <motion.div variants={itemVariants} className="flex flex-wrap gap-3">
             <Link
