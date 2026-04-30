@@ -2,6 +2,8 @@ import { useEffect, useRef } from 'react'
 import { motion, type Variants } from 'framer-motion'
 import { ArrowUpRight, Briefcase, FolderGit2 } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
+import { useTranslation } from 'react-i18next'
 import { AnimatedSection } from '../components/ui/AnimatedSection'
 import { Badge } from '../components/ui/Badge'
 import { Card } from '../components/ui/Card'
@@ -159,8 +161,17 @@ function ParticleField() {
 }
 
 export function Home() {
+  const { t } = useTranslation()
+
   return (
     <div className="bg-[#0e0e0e] text-[#f0f0f0]">
+      <Helmet>
+        <title>{t('seo.home.title')}</title>
+        <meta name="description" content={t('seo.home.description')} />
+        <meta property="og:title" content={t('seo.home.title')} />
+        <meta property="og:description" content={t('seo.home.description')} />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <AnimatedSection
         className="relative -mt-20 flex min-h-[70vh] items-center overflow-hidden px-6 pt-20"
       >
@@ -170,19 +181,20 @@ export function Home() {
         <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col gap-6 py-16">
           <motion.div variants={itemVariants} className="max-w-3xl">
             <p className="mb-4 text-sm uppercase tracking-[0.4em] text-[#888888]">
-              Python / Automation / Bots
+              {t('home.eyebrow')}
             </p>
             <h1
               className="text-3xl font-semibold leading-tight md:text-5xl"
               style={{ fontFamily: 'var(--font-heading)' }}
             >
-              <span className="text-[#e8b84b]">Технологии</span> созданы, чтобы помогать.
+              <span className="text-[#e8b84b]">{t('home.hero.highlight1')}</span>{' '}
+              {t('home.hero.line1')}
               <br />
-              Я помогаю им <span className="text-[#e8b84b]">работать на вас</span>.
+              {t('home.hero.line2Prefix')}{' '}
+              <span className="text-[#e8b84b]">{t('home.hero.highlight2')}</span>.
             </h1>
             <p className="mt-4 text-base leading-relaxed text-[#b5b5b5] md:text-lg">
-              Python-разработчик, специализируюсь на ботах, парсинге и автоматизации.
-              Пишу код, который решает задачи, а не создаёт новые.
+              {t('home.hero.subtitle')}
             </p>
           </motion.div>
           <motion.div variants={itemVariants} className="flex flex-wrap gap-3">
@@ -190,14 +202,14 @@ export function Home() {
               to="/projects"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-[#e8b84b] px-5 py-2.5 text-sm font-semibold text-[#0e0e0e] transition hover:brightness-110"
             >
-              Посмотреть проекты
+              {t('home.actions.projects')}
               <ArrowUpRight size={16} />
             </Link>
             <Link
               to="/contact"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-[#e8b84b] px-5 py-2.5 text-sm font-semibold text-[#e8b84b] transition hover:bg-[#e8b84b] hover:text-[#0e0e0e]"
             >
-              Связаться
+              {t('home.actions.contact')}
               <ArrowUpRight size={16} />
             </Link>
           </motion.div>
@@ -217,16 +229,16 @@ export function Home() {
                   className="text-2xl font-semibold md:text-3xl"
                   style={{ fontFamily: 'var(--font-heading)' }}
                 >
-                  Проекты
+                  {t('home.projects.title')}
                 </h2>
               </div>
-              <p className="mt-2 text-[#888888]">Примеры работ из моего GitHub</p>
+              <p className="mt-2 text-[#888888]">{t('home.projects.subtitle')}</p>
             </div>
             <Link
               to="/projects"
               className="inline-flex items-center gap-2 rounded-full border border-[#e8b84b] px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#e8b84b] transition hover:bg-[#e8b84b] hover:text-[#0e0e0e]"
             >
-              Все проекты
+              {t('home.projects.cta')}
               <ArrowUpRight size={14} />
             </Link>
           </motion.div>
@@ -237,12 +249,17 @@ export function Home() {
                   <div className="flex items-center gap-2">
                     <FolderGit2 className="h-4 w-4 shrink-0 text-[#e8b84b]" strokeWidth={1.8} />
                     <h3 className="text-lg font-semibold text-[#f0f0f0]">
-                      {project.title}
+                      {t(`projects.items.${project.id}.title`)}
                     </h3>
                   </div>
-                  <Badge label={project.category} variant="category" />
+                  <Badge
+                    label={t(`projects.categories.${project.category}`)}
+                    variant="category"
+                  />
                 </div>
-                <p className="text-sm text-[#888888]">{project.description}</p>
+                <p className="text-sm text-[#888888]">
+                  {t(`projects.items.${project.id}.description`)}
+                </p>
               </Card>
             ))}
           </motion.div>
@@ -262,16 +279,16 @@ export function Home() {
                   className="text-2xl font-semibold md:text-3xl"
                   style={{ fontFamily: 'var(--font-heading)' }}
                 >
-                  Заказы на фрилансе
+                  {t('home.orders.title')}
                 </h2>
               </div>
-              <p className="mt-2 text-[#888888]">Три проекта, которыми особенно горжусь</p>
+              <p className="mt-2 text-[#888888]">{t('home.orders.subtitle')}</p>
             </div>
             <Link
-              to="/freelance"
+              to="/orders"
               className="inline-flex items-center gap-2 rounded-full border border-[#e8b84b] px-4 py-2 text-xs font-semibold uppercase tracking-wide text-[#e8b84b] transition hover:bg-[#e8b84b] hover:text-[#0e0e0e]"
             >
-              Все заказы
+              {t('home.orders.cta')}
               <ArrowUpRight size={14} />
             </Link>
           </motion.div>
@@ -281,10 +298,14 @@ export function Home() {
                 <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-2">
                     <Briefcase className="h-4 w-4 shrink-0 text-[#e8b84b]" strokeWidth={1.8} />
-                    <h3 className="text-lg font-semibold text-[#f0f0f0]">{order.title}</h3>
+                    <h3 className="text-lg font-semibold text-[#f0f0f0]">
+                      {t(`orders.items.${order.id}.title`)}
+                    </h3>
                   </div>
                 </div>
-                <p className="text-sm text-[#888888]">{order.description}</p>
+                <p className="text-sm text-[#888888]">
+                  {t(`orders.items.${order.id}.description`)}
+                </p>
               </Card>
             ))}
           </motion.div>

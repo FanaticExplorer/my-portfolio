@@ -1,0 +1,230 @@
+{
+  "app": {
+    "notFound": "Page not found"
+  },
+  "seo": {
+    "home": {
+      "title": "FanaticExplorer — Python Developer Portfolio",
+      "description": "Python developer focused on bots, parsing, and automation. Portfolio with featured projects, orders, and fast ways to get in touch. Based in Europe."
+    },
+    "projects": {
+      "title": "Projects — Bots, Utilities, Web Tools",
+      "description": "Browse a curated set of bots, utilities, web tools, and study projects with tech stacks, GitHub links, and concise outcomes. Filter by category, see highlights."
+    },
+    "orders": {
+      "title": "Orders",
+      "description": "Selected orders with briefs, reviews, and tech stacks, showing practical automation and bot solutions delivered for clients. Across Telegram and web."
+    },
+    "contact": {
+      "title": "Contact — Send a Project Request",
+      "description": "Send a project request, share task details, and choose a preferred contact method such as Telegram, GitHub, X, or email. Fast reply and clear next steps."
+    },
+    "notFound": {
+      "title": "Page Not Found — FanaticExplorer",
+      "description": "The requested page could not be found. Use the navigation to return home, view projects, or reach out directly. You can also switch language. Need help? Contact"
+    }
+  },
+  "navbar": {
+    "home": "Home",
+    "projects": "Projects",
+    "orders": "Orders",
+    "contact": "Contact",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language"
+  },
+  "home": {
+    "eyebrow": "Python / Automation / Bots",
+    "hero": {
+      "highlight1": "Technologies",
+      "line1": "are made to help.",
+      "line2Prefix": "I help them",
+      "highlight2": "work for you",
+      "subtitle": "Python developer focused on bots, parsing, and automation. I write code that solves problems, not creates new ones."
+    },
+    "actions": {
+      "projects": "View projects",
+      "contact": "Get in touch"
+    },
+    "projects": {
+      "title": "Projects",
+      "subtitle": "Highlights from my GitHub",
+      "cta": "All projects"
+    },
+    "orders": {
+      "title": "Orders",
+      "subtitle": "Three projects I'm especially proud of",
+      "cta": "All orders"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "A collection of bots, utilities, web tools, and study projects.",
+    "filters": {
+      "all": "All",
+      "bots": "Bots",
+      "desktop": "Desktop",
+      "web": "Web",
+      "data": "Data",
+      "other": "Other"
+    },
+    "categories": {
+      "bots": "Bots",
+      "desktop": "Desktop",
+      "web": "Web",
+      "data": "Data",
+      "other": "Other"
+    },
+    "githubAria": "GitHub: {{title}}",
+    "items": {
+      "super-role-manager": {
+        "title": "SuperRoleManager",
+        "description": "Configurable Discord bot for managing self-assignable roles. Roles are defined in a YAML file, supports single- and multi-select categories, buttons with current state, and hot reloading the config without restarting the bot."
+      },
+      "emojies-parser": {
+        "title": "EmojiesParser",
+        "description": "Tool for bulk downloading emojis and stickers from public Discord servers. Supports both static and animated emojis, collects metadata, and organizes results into JSON and folders."
+      },
+      "myinstantsapi-py": {
+        "title": "MyinstantsAPI-py",
+        "description": "Unofficial FastAPI client for MyInstants. Lets you search sounds by keywords, fetch trends, recently added sounds, and details for specific audio. Works via web scraping."
+      },
+      "window-manager": {
+        "title": "WindowManager",
+        "description": "Lightweight utility for managing Windows windows from the command line. Supports listing windows, checking whether they are running, minimizing, and activating the target window. Includes a compiled binary via Nuitka."
+      },
+      "sayclip-legacy": {
+        "title": "SayClip-legacy",
+        "description": "WebView app for speech-to-text using Whisper. Visualizes audio, uses VAD, and lets you define instructions to polish the text."
+      },
+      "lifehack-hub": {
+        "title": "LifehackHub",
+        "description": "Semester project for the \"Frontend Technologies\" course. SPA with a collection of productivity lifehacks. Lifehacks are stored in JSON. Supports filtering by category, viewing details, and saving favorites."
+      },
+      "genius-cleaner": {
+        "title": "GeniusCleaner",
+        "description": "Published Firefox extension that cleans Genius.com pages from annotations, popups, and highlights, leaving only lyrics. Works with scrolling and dynamic content loading."
+      },
+      "pear-cleaner": {
+        "title": "PearCleaner",
+        "description": "Online generator of custom CSS styles for the Pear Desktop web app, letting users hide unwanted UI elements in YouTube Music such as mood chips, social buttons, menu items, and more."
+      },
+      "recording-converter": {
+        "title": "RecordingConverter",
+        "description": "Advanced OBS Studio plugin that automates conversion of recordings and replays into multiple formats via FFmpeg. Supports many formats, custom parameters, and optional deletion of originals."
+      },
+      "uni-nfl-fantasy-dwh": {
+        "title": "uni-nfl-fantasy-dwh",
+        "description": "Study project building a Data Warehouse using the Kimball methodology on an NFL Fantasy Football dataset in Snowflake. Implements a star schema with SCD Type 2 and analytical queries for player ranking and fantasy points."
+      },
+      "easymsgbox": {
+        "title": "easymsgbox",
+        "description": "Compact library published on PyPI that simplifies creating standard dialog windows (info, warning, error)."
+      },
+      "lrc-discord-sync": {
+        "title": "LRCDiscordSync",
+        "description": "Utility to sync the current song lyrics to Discord status. Updates the user status in real time based on lines from an LRC file. Uses a user token; intended for educational use only."
+      }
+    }
+  },
+  "orders": {
+    "title": "Orders"
+  },
+  "orders": {
+    "items": {
+      "telegram-channel-parse": {
+        "title": "Telegram channel parsing",
+        "description": "Script that, by Telegram channel ID, determined its username and name.",
+        "review": "Competent specialist. Master of his craft. I'll know who to contact next time."
+      },
+      "discord-account-checker": {
+        "title": "Discord server account checker",
+        "description": "Python CLI app for bulk checking whether accounts exist on a specified Discord server, with clean code and error handling.",
+        "review": "The checker works, the task was completed successfully. Recommended!"
+      },
+      "telegram-neuro-commentator": {
+        "title": "Neuro-commentator for Telegram posts",
+        "description": "Telegram userbot on Pyrogram + OpenAI that automatically commented on new posts with a natural tone and light promotion.",
+        "review": "Great specialist. Responsible, always in touch. Very satisfied with the cooperation. Recommended."
+      },
+      "reddit-autoposter": {
+        "title": "Reddit autoposter / activity boosting",
+        "description": "Automated Reddit posting via PRAW with a spreadsheet binding plus scheduled upvote boosting through an external API.",
+        "review": "Thank you for the professional and prompt work! I especially appreciate the great communication and speed. Recommended for collaboration!"
+      },
+      "python-cgi-flask": {
+        "title": "Python CGI app enhancements",
+        "description": "Migration of a local CGI project to Flask with subsequent deployment to PythonAnywhere.",
+        "review": "Awesome work, everything done in detail."
+      },
+      "account-registration-script": {
+        "title": "Account registration script",
+        "description": "Built a script for mass account creation without captchas, with intelligent IP management and data filling.",
+        "review": "Thanks for the work, a good specialist."
+      },
+      "binance-auth-bypass": {
+        "title": "Parsing Binance page with auth bypass",
+        "description": "Reverse-engineering the Binance Futures Leaderboard page. Implemented parsing without authentication by analyzing API requests (REST API in DevTools).",
+        "review": "I will always work with Andriy now. He did what other clients said was impossible. Completed everything quickly and with high quality, highly recommended."
+      },
+      "telegram-chatgpt-userbot": {
+        "title": "Realistic ChatGPT companion userbot",
+        "description": "Advanced Telegram userbot on Pyrogram + GPT-3.5-turbo that held conversations like a real person with human-like action emulation and consulted about company services.",
+        "review": "Everything was done perfectly, recommended!"
+      },
+      "binance-two-sessions": {
+        "title": "Bypassing limits and running two Binance sessions",
+        "description": "Find a way to use one Binance session on multiple devices — solution via cookies and transferring them.",
+        "review": "Thanks, helped resolve the issue."
+      },
+      "automation-mailing": {
+        "title": "Automated outreach on low-traffic websites",
+        "description": "Playwright + Flet app for automating messaging on different websites. Delivered a convenient Flutter-based interface for the client.",
+        "review": "Great communication. Happy with the collaboration."
+      },
+      "run-script": {
+        "title": "Script run",
+        "description": "Urgent launch of a ready program on the client's server after the previous contractor disappeared.",
+        "review": "Recommended. Writes to the point, works fast."
+      },
+      "telegram-captcha-free-groups": {
+        "title": "Bot for finding captcha-free groups",
+        "description": "Automated search for Telegram groups and channels for outreach. Filtering via GPT-4o-mini to exclude groups with captchas.",
+        "review": "A star task, but the order was completed successfully. Thank you."
+      }
+    }
+  },
+  "contact": {
+    "form": {
+      "title": "Send a request",
+      "nameLabel": "Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "your@email.com",
+      "detailsLabel": "Task details",
+      "detailsPlaceholder": "Briefly describe the task, timeline, and budget",
+      "submit": "Send request"
+    },
+    "links": {
+      "title": "Contact options",
+      "subtitle": "Preferred method — Telegram",
+      "telegram": "Telegram",
+      "github": "GitHub",
+      "freelancehunt": "FreelanceHunt",
+      "x": "X (Twitter)",
+      "email": "Email"
+    },
+    "status": {
+      "success": "✅",
+      "error": "❌"
+    }
+  },
+  "footer": {
+    "signature": "FanaticExplorer · {{year}}",
+    "aria": {
+      "github": "GitHub",
+      "email": "Email"
+    }
+  }
+}

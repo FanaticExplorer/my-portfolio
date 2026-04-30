@@ -1,19 +1,20 @@
+import { useTranslation } from 'react-i18next'
+
 export function Footer() {
   const year = new Date().getFullYear()
+  const { t } = useTranslation()
 
   return (
     <footer className="border-t border-[#2a2a2a] bg-[#0e0e0e]">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-3">
-        <div className="text-xs text-[#888888]">
-          FanaticExplorer · {year}
-        </div>
+        <div className="text-xs text-[#888888]">{t('footer.signature', { year })}</div>
         <div className="flex items-center gap-2">
           <a
             href="https://github.com/FanaticExplorer"
             target="_blank"
             rel="noreferrer"
             className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-[#2a2a2a] text-[#f0f0f0] transition hover:border-[#e8b84b] hover:text-[#e8b84b]"
-            aria-label="GitHub"
+            aria-label={t('footer.aria.github')}
           >
             <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" aria-hidden="true">
               <path
@@ -25,7 +26,7 @@ export function Footer() {
           <a
             href="mailto:the.fanatic.explorer@gmail.com"
             className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-[#2a2a2a] text-[#f0f0f0] transition hover:border-[#e8b84b] hover:text-[#e8b84b]"
-            aria-label="Email"
+            aria-label={t('footer.aria.email')}
           >
             <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" aria-hidden="true">
               <path

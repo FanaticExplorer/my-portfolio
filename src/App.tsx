@@ -1,13 +1,29 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { HashRouter, Route, Routes, useLocation } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
+import { useTranslation } from 'react-i18next'
 import { Footer } from './components/ui/Footer'
 import { Navbar } from './components/ui/Navbar'
 import { Contact } from './pages/Contact'
-import { Freelance } from './pages/Freelance'
+import { Orders } from './pages/Freelance'
 import { Home } from './pages/Home'
 import { Projects } from './pages/Projects'
 
-const NotFound = () => <div className="min-h-screen">Not Found</div>
+function NotFound() {
+  const { t } = useTranslation()
+  return (
+    <div className="min-h-screen">
+      <Helmet>
+        <title>{t('seo.notFound.title')}</title>
+        <meta name="description" content={t('seo.notFound.description')} />
+        <meta property="og:title" content={t('seo.notFound.title')} />
+        <meta property="og:description" content={t('seo.notFound.description')} />
+        <meta property="og:type" content="website" />
+      </Helmet>
+      {t('app.notFound')}
+    </div>
+  )
+}
 
 const pageVariants = {
   initial: { opacity: 0 },
@@ -31,7 +47,7 @@ function AnimatedRoutes() {
         <Routes location={location}>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/freelance" element={<Freelance />} />
+          <Route path="/orders" element={<Orders />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
@@ -41,14 +57,17 @@ function AnimatedRoutes() {
 }
 
 function App() {
+  const { i18n } = useTranslation()
+
   return (
-    <HashRouter>
+    <Router>
+      <Helmet htmlAttributes={{ lang: i18n.language }} />
       <Navbar />
       <main className="pt-20">
         <AnimatedRoutes />
       </main>
       <Footer />
-    </HashRouter>
+    </Router>
   )
 }
 

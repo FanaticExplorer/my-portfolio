@@ -1,22 +1,28 @@
 import { useMemo, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import { Helmet } from 'react-helmet-async'
+import { useTranslation } from 'react-i18next'
 import { Badge } from '../components/ui/Badge'
 import { Card } from '../components/ui/Card'
 import { projects } from '../data/projects'
 
 type FilterKey = 'all' | 'bots' | 'desktop' | 'web' | 'data' | 'other'
 
-const filters: Array<{ key: FilterKey; label: string }> = [
-  { key: 'all', label: 'Все' },
-  { key: 'bots', label: 'Боты' },
-  { key: 'desktop', label: 'Десктоп' },
-  { key: 'web', label: 'Веб' },
-  { key: 'data', label: 'Data' },
-  { key: 'other', label: 'Другое' },
-]
-
 export function Projects() {
   const [activeFilter, setActiveFilter] = useState<FilterKey>('all')
+  const { t } = useTranslation()
+
+  const filters: Array<{ key: FilterKey; label: string }> = useMemo(
+    () => [
+      { key: 'all', label: t('projects.filters.all') },
+      { key: 'bots', label: t('projects.filters.bots') },
+      { key: 'desktop', label: t('projects.filters.desktop') },
+      { key: 'web', label: t('projects.filters.web') },
+      { key: 'data', label: t('projects.filters.data') },
+      { key: 'other', label: t('projects.filters.other') },
+    ],
+    [t],
+  )
 
   const filteredProjects = useMemo(() => {
     if (activeFilter === 'all') return projects
@@ -25,16 +31,23 @@ export function Projects() {
 
   return (
     <section className="min-h-screen bg-[#0e0e0e] px-6 py-16 text-[#f0f0f0]">
+      <Helmet>
+        <title>{t('seo.projects.title')}</title>
+        <meta name="description" content={t('seo.projects.description')} />
+        <meta property="og:title" content={t('seo.projects.title')} />
+        <meta property="og:description" content={t('seo.projects.description')} />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-7">
         <div>
           <h1
             className="text-3xl font-semibold md:text-4xl"
             style={{ fontFamily: 'var(--font-heading)' }}
           >
-            Проекты
+            {t('projects.title')}
           </h1>
           <p className="mt-3 text-[#888888]">
-            Коллекция ботов, утилит, веб-инструментов и учебных проектов.
+            {t('projects.subtitle')}
           </p>
         </div>
 
@@ -71,12 +84,16 @@ export function Projects() {
               >
                 <Card className="flex h-full flex-col gap-4 p-5">
                   <div className="flex items-start justify-between gap-3">
-                    <h3 className="text-lg font-semibold">{project.title}</h3>
+                    <h3 className="text-lg font-semibold">
+                      {t(`projects.items.${project.id}.title`)}
+                    </h3>
                     <a
                       href={project.githubUrl}
                       target="_blank"
                       rel="noreferrer"
-                      aria-label={`GitHub: ${project.title}`}
+                      aria-label={t('projects.githubAria', {
+                        title: t(`projects.items.${project.id}.title`),
+                      })}
                       className="rounded-full border border-[#2a2a2a] bg-[#151515] p-2 text-[#e8b84b] transition hover:border-[#e8b84b]"
                     >
                       <svg
@@ -107,7 +124,7 @@ export function Projects() {
                       overflow: 'hidden',
                     }}
                   >
-                    {project.description}
+                    {t(`projects.items.${project.id}.description`)}
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {project.techs.map((tech) => (

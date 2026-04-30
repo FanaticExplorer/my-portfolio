@@ -1,0 +1,230 @@
+{
+  "app": {
+    "notFound": "Stránka nebola nájdená"
+  },
+  "seo": {
+    "home": {
+      "title": "FanaticExplorer — Python vývojár",
+      "description": "Python vývojár pre boty, parsing a automatizáciu. Portfólio s vybranými projektmi, zákazkami a rýchlym kontaktom. Pracujem online po celom svete."
+    },
+    "projects": {
+      "title": "Projekty — boty, utilíty, web",
+      "description": "Výber botov, utilít, webových nástrojov a študijných projektov s technológiami, GitHub odkazmi a stručnými výsledkami. Filtre podľa kategórií a hlavné highlighty."
+    },
+    "orders": {
+      "title": "Zákazky",
+      "description": "Vybrané zákazky s popismi, recenziami a stackom, ktoré ukazujú praktické riešenia automatizácie a botov. Skúsenosti s Telegramom a webom, rýchla odozva."
+    },
+    "contact": {
+      "title": "Kontakt — poslať dopyt",
+      "description": "Pošlite dopyt, opíšte úlohu a vyberte kanál: Telegram, GitHub, X alebo email. Odpovedám rýchlo. Vieme dohodnúť termíny a rozpočet bez zbytočných krokov."
+    },
+    "notFound": {
+      "title": "Stránka nebola nájdená — FanaticExplorer",
+      "description": "Stránka nebola nájdená. Vráťte sa domov, pozrite projekty alebo mi napíšte. Jazyk zmeníte v menu. Ak potrebujete pomoc, som online a odpoviem rýchlo. Hneď."
+    }
+  },
+  "navbar": {
+    "home": "Domov",
+    "projects": "Projekty",
+    "orders": "Zákazky",
+    "contact": "Kontakt",
+    "menu": "Menu",
+    "openMenu": "Otvoriť menu",
+    "closeMenu": "Zavrieť menu",
+    "language": "Zmeniť jazyk"
+  },
+  "home": {
+    "eyebrow": "Python / Automatizácia / Boty",
+    "hero": {
+      "highlight1": "Technológie",
+      "line1": "sú vytvorené, aby pomáhali.",
+      "line2Prefix": "Pomáham im",
+      "highlight2": "pracovať pre vás",
+      "subtitle": "Python vývojár zameraný na botov, parsing a automatizáciu. Píšem kód, ktorý rieši úlohy, nie vytvára nové."
+    },
+    "actions": {
+      "projects": "Pozrieť projekty",
+      "contact": "Kontaktovať"
+    },
+    "projects": {
+      "title": "Projekty",
+      "subtitle": "Ukážky z môjho GitHubu",
+      "cta": "Všetky projekty"
+    },
+    "orders": {
+      "title": "Zákazky",
+      "subtitle": "Tri projekty, na ktoré som obzvlášť hrdý",
+      "cta": "Všetky zákazky"
+    }
+  },
+  "projects": {
+    "title": "Projekty",
+    "subtitle": "Kolekcia botov, utilít, webových nástrojov a študijných projektov.",
+    "filters": {
+      "all": "Všetko",
+      "bots": "Boty",
+      "desktop": "Desktop",
+      "web": "Web",
+      "data": "Data",
+      "other": "Iné"
+    },
+    "categories": {
+      "bots": "Boty",
+      "desktop": "Desktop",
+      "web": "Web",
+      "data": "Data",
+      "other": "Iné"
+    },
+    "githubAria": "GitHub: {{title}}",
+    "items": {
+      "super-role-manager": {
+        "title": "SuperRoleManager",
+        "description": "Konfigurovateľný Discord bot na správu samopriraďovaných rolí. Roly sa nastavujú cez YAML súbor, podporuje single- aj multi-select kategórie, tlačidlá s aktuálnym stavom a hot reload konfigurácie bez reštartu bota."
+      },
+      "emojies-parser": {
+        "title": "EmojiesParser",
+        "description": "Nástroj na hromadné sťahovanie emodži a stickerov z verejných Discord serverov. Podporuje statické aj animované emodži, zbiera metadáta a štruktúruje výsledok do JSON a priečinkov."
+      },
+      "myinstantsapi-py": {
+        "title": "MyinstantsAPI-py",
+        "description": "Neoficiálny FastAPI klient pre MyInstants. Umožňuje vyhľadávať zvuky podľa kľúčových slov, získavať trendy, nedávno pridané zvuky a informácie o konkrétnom audiu. Funguje cez web scraping."
+      },
+      "window-manager": {
+        "title": "WindowManager",
+        "description": "Ľahká utilita na správu okien Windows z príkazového riadku. Podporuje zoznam okien, kontrolu behu, minimalizáciu a aktiváciu cieľového okna. Obsahuje skompilovaný súbor vďaka Nuitka."
+      },
+      "sayclip-legacy": {
+        "title": "SayClip-legacy",
+        "description": "WebView aplikácia na prevod reči na text pomocou Whisper. Vizualizuje audio, používa VAD a umožňuje definovať inštrukcie na úpravu textu."
+      },
+      "lifehack-hub": {
+        "title": "LifehackHub",
+        "description": "Semestrálny projekt pre kurz \"Frontend technológie\". SPA aplikácia so zbierkou lifehackov pre produktivitu. Lifehacky sú uložené v JSON. Umožňuje filtrovať podľa kategórií, prezerať detaily a ukladať obľúbené."
+      },
+      "genius-cleaner": {
+        "title": "GeniusCleaner",
+        "description": "Publikované rozšírenie pre Firefox, ktoré čistí stránky Genius.com od anotácií, vyskakovacích okien a zvýraznení, ponecháva iba čistý text piesní. Funguje pri skrolovaní a dynamickom načítaní obsahu."
+      },
+      "pear-cleaner": {
+        "title": "PearCleaner",
+        "description": "Online generátor vlastných CSS štýlov pre webovú aplikáciu Pear Desktop, ktorý umožňuje skryť nechcené prvky rozhrania v YouTube Music, ako sú mood chips, sociálne tlačidlá, položky menu a ďalšie."
+      },
+      "recording-converter": {
+        "title": "RecordingConverter",
+        "description": "Pokročilý plugin pre OBS Studio, ktorý automatizuje konverziu nahrávok a replayov do rôznych formátov cez FFmpeg. Podporuje mnoho formátov, vlastné parametre a voliteľné odstránenie originálov."
+      },
+      "uni-nfl-fantasy-dwh": {
+        "title": "uni-nfl-fantasy-dwh",
+        "description": "Študijný projekt tvorby Data Warehouse podľa metodológie Kimball na datasete NFL Fantasy Football v Snowflake. Implementuje star schému so SCD Type 2 a analytické dotazy na ranking hráčov a výpočet fantasy bodov."
+      },
+      "easymsgbox": {
+        "title": "easymsgbox",
+        "description": "Kompaktná knižnica publikovaná na PyPI, ktorá zjednodušuje tvorbu štandardných dialógových okien (info, varovanie, chyba)."
+      },
+      "lrc-discord-sync": {
+        "title": "LRCDiscordSync",
+        "description": "Utilita na synchronizáciu textu aktuálnej skladby so statusom v Discorde. Aktualizuje status v reálnom čase podľa riadku z LRC súboru. Používa User Token; určené len na vzdelávacie účely."
+      }
+    }
+  },
+  "orders": {
+    "title": "Zákazky"
+  },
+  "orders": {
+    "items": {
+      "telegram-channel-parse": {
+        "title": "Parsovanie Telegram kanálov",
+        "description": "Skript, ktorý podľa ID Telegram kanála určoval jeho username a názov.",
+        "review": "Šikovný špecialista. Majster svojho remesla. Budem vedieť, na koho sa nabudúce obrátiť."
+      },
+      "discord-account-checker": {
+        "title": "Checker účtov na Discord serveri",
+        "description": "Konzolová aplikácia v Pythone na hromadnú kontrolu prítomnosti účtov na zadanom Discord serveri so ukladaním výsledkov, čistým kódom a ošetrením chýb.",
+        "review": "Checker funguje, úloha bola splnená úspešne. Odporúčam!"
+      },
+      "telegram-neuro-commentator": {
+        "title": "Neuro-komentátor pod príspevky v Telegrame",
+        "description": "Telegram userbot na Pyrogram + OpenAI, ktorý automaticky komentoval nové príspevky v kanáli s prirodzeným tónom a jemnou propagáciou.",
+        "review": "Skvelý špecialista. Zodpovedný, vždy dostupný. Veľmi spokojný so spoluprácou. Odporúčam."
+      },
+      "reddit-autoposter": {
+        "title": "Reddit autoposter / zvyšovanie aktivity",
+        "description": "Automatické postovanie na Reddit cez PRAW s napojením na tabuľku a následné plánované zvyšovanie upvotov cez externé API.",
+        "review": "Ďakujem za profesionálne a rýchlo vykonanú úlohu! Osobitne oceňujem skvelú komunikáciu a rýchlosť práce. Odporúčam na spoluprácu!"
+      },
+      "python-cgi-flask": {
+        "title": "Úprava Python CGI app",
+        "description": "Migrácia lokálneho CGI projektu na Flask s následným nasadením na PythonAnywhere.",
+        "review": "Paráda, všetko spravil do detailov."
+      },
+      "account-registration-script": {
+        "title": "Skript na registráciu účtov",
+        "description": "Vyvinul skript na hromadnú tvorbu profilov bez captchy s inteligentným riadením IP adries a vypĺňaním dát.",
+        "review": "Ďakujem za prácu, dobrý odborník."
+      },
+      "binance-auth-bypass": {
+        "title": "Parsovanie stránky Binance s obídením autorizácie",
+        "description": "Reverse-engineering stránky Binance Futures Leaderboard. Implementované parsovanie bez autorizácie cez analýzu API požiadaviek (REST API v DevTools).",
+        "review": "Budeme teraz vždy spolupracovať s Andrijom, urobil to, čo iní zákazníci tvrdili, že je nemožné. Všetko spravil rýchlo a kvalitne, úprimne odporúčam."
+      },
+      "telegram-chatgpt-userbot": {
+        "title": "Realistický userbot-spoločník s ChatGPT",
+        "description": "Pokročilý Telegram userbot na Pyrogram + GPT-3.5-turbo, ktorý viedol rozhovor čo najviac ako živý človek s emuláciou ľudských akcií a konzultoval služby firmy.",
+        "review": "Všetko je spravené výborne, odporúčam!"
+      },
+      "binance-two-sessions": {
+        "title": "Obídenie obmedzení a podpora dvoch relácií na Binance",
+        "description": "Nájsť spôsob, ako mať jednu reláciu Binance na viacerých zariadeniach — riešenie cez cookies a ich prenos.",
+        "review": "Ďakujem, pomohol vyriešiť problém."
+      },
+      "automation-mailing": {
+        "title": "Automatizácia rozosielania na menej populárnych weboch",
+        "description": "Aplikácia na Playwright + Flet na automatizáciu posielania správ na rôznych webových stránkach. Vytvorené pohodlné Flutter rozhranie pre klienta.",
+        "review": "Dobrá komunikácia. So spoluprácou som spokojný."
+      },
+      "run-script": {
+        "title": "Spustenie skriptu",
+        "description": "Urgentné spustenie hotového programu na serveri zákazníka po zmiznutí predchádzajúceho dodávateľa.",
+        "review": "Odporúčam. Píše vecne, robí rýchlo."
+      },
+      "telegram-captcha-free-groups": {
+        "title": "Bot na vyhľadávanie skupín bez captchy",
+        "description": "Automatizované vyhľadávanie Telegram skupín a kanálov pre rozosielky. Filtrovanie cez GPT-4o-mini na vylúčenie skupín s captchou.",
+        "review": "Úloha s hviezdičkou, ale objednávka bola splnená úspešne. Ďakujem."
+      }
+    }
+  },
+  "contact": {
+    "form": {
+      "title": "Poslať dopyt",
+      "nameLabel": "Meno",
+      "namePlaceholder": "Vaše meno",
+      "emailLabel": "Email",
+      "emailPlaceholder": "your@email.com",
+      "detailsLabel": "Popis zadania",
+      "detailsPlaceholder": "Stručne opíšte zadanie, termín a rozpočet",
+      "submit": "Poslať dopyt"
+    },
+    "links": {
+      "title": "Možnosti kontaktu",
+      "subtitle": "Preferovaný kanál — Telegram",
+      "telegram": "Telegram",
+      "github": "GitHub",
+      "freelancehunt": "FreelanceHunt",
+      "x": "X (Twitter)",
+      "email": "E-mail"
+    },
+    "status": {
+      "success": "✅",
+      "error": "❌"
+    }
+  },
+  "footer": {
+    "signature": "FanaticExplorer · {{year}}",
+    "aria": {
+      "github": "GitHub",
+      "email": "Email"
+    }
+  }
+}
