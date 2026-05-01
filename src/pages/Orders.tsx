@@ -10,10 +10,10 @@ export function Orders() {
   return (
     <section className="min-h-screen bg-[#0e0e0e] px-6 py-16 text-[#f0f0f0]">
       <Helmet>
-        <title>{t('seo.orders.title')}</title>
-        <meta name="description" content={t('seo.orders.description')} />
-        <meta property="og:title" content={t('seo.orders.title')} />
-        <meta property="og:description" content={t('seo.orders.description')} />
+        <title>{t('orders.title')}</title>
+        <meta name="description" content={t('orders.subtitle')} />
+        <meta property="og:title" content={t('orders.title')} />
+        <meta property="og:description" content={t('orders.subtitle')} />
         <meta property="og:type" content="website" />
       </Helmet>
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-7">
@@ -22,10 +22,10 @@ export function Orders() {
             className="text-3xl font-semibold md:text-4xl"
             style={{ fontFamily: 'var(--font-heading)' }}
           >
-            {t('seo.orders.title')}
+            {t('orders.title')}
           </h1>
           <p className="mt-3 text-[#888888]">
-            {t('home.orders.subtitle')}
+            {t('orders.subtitle')}
           </p>
         </div>
 

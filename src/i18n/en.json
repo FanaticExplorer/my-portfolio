@@ -41,7 +41,7 @@
       "line1": "are made to help.",
       "line2Prefix": "I help them",
       "highlight2": "work for you",
-      "subtitle": "Python developer focused on bots, parsing, and automation. I write code that solves problems, not creates new ones."
+      "subtitle": "Creating bots and automation in Python — removing manual work, saving time."
     },
     "actions": {
       "projects": "View projects",
@@ -49,18 +49,18 @@
     },
     "projects": {
       "title": "Projects",
-      "subtitle": "Highlights from my GitHub",
+      "subtitle": "Built for fun. Open-sourced for you.",
       "cta": "All projects"
     },
     "orders": {
       "title": "Orders",
-      "subtitle": "Three projects I'm especially proud of",
+      "subtitle": "Real clients. Real problems. Real solutions.",
       "cta": "All orders"
     }
   },
   "projects": {
     "title": "Projects",
-    "subtitle": "A collection of bots, utilities, web tools, and study projects.",
+    "subtitle": "Started as ideas. Ended up as working solutions.",
     "filters": {
       "all": "All",
       "bots": "Bots",
@@ -129,9 +129,8 @@
     }
   },
   "orders": {
-    "title": "Orders"
-  },
-  "orders": {
+    "title": "Orders",
+    "subtitle": "Real work. Real results.",
     "items": {
       "telegram-channel-parse": {
         "title": "Telegram channel parsing",

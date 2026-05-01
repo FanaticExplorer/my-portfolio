@@ -41,7 +41,7 @@
       "line1": "sú vytvorené, aby pomáhali.",
       "line2Prefix": "Pomáham im",
       "highlight2": "pracovať pre vás",
-      "subtitle": "Python vývojár zameraný na botov, parsing a automatizáciu. Píšem kód, ktorý rieši úlohy, nie vytvára nové."
+      "subtitle": "Rozvíjam boty a automatizáciu v Pythone — odstraňujem ručnú prácu, šetrím čas."
     },
     "actions": {
       "projects": "Pozrieť projekty",
@@ -49,18 +49,18 @@
     },
     "projects": {
       "title": "Projekty",
-      "subtitle": "Ukážky z môjho GitHubu",
+      "subtitle": "Spravené pre zábavu. Open-source pre vás.",
       "cta": "Všetky projekty"
     },
     "orders": {
       "title": "Zákazky",
-      "subtitle": "Tri projekty, na ktoré som obzvlášť hrdý",
+      "subtitle": "Reálni klienti. Reálne problémy. Reálne riešenia.",
       "cta": "Všetky zákazky"
     }
   },
   "projects": {
     "title": "Projekty",
-    "subtitle": "Kolekcia botov, utilít, webových nástrojov a študijných projektov.",
+    "subtitle": "Začali ako nápady. Skončili ako funkčné riešenia.",
     "filters": {
       "all": "Všetko",
       "bots": "Boty",
@@ -129,9 +129,8 @@
     }
   },
   "orders": {
-    "title": "Zákazky"
-  },
-  "orders": {
+    "title": "Zákazky",
+    "subtitle": "Vybrané projekty automatizácie a botov vytvorené pre klientov. Na platformách Telegram, web a desktop.",
     "items": {
       "telegram-channel-parse": {
         "title": "Parsovanie Telegram kanálov",

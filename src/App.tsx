@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'
 import { Footer } from './components/ui/Footer'
 import { Navbar } from './components/ui/Navbar'
 import { Contact } from './pages/Contact'
-import { Orders } from './pages/Freelance'
+import { Orders } from './pages/Orders'
 import { Home } from './pages/Home'
 import { Projects } from './pages/Projects'
 
