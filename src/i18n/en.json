@@ -125,6 +125,26 @@
       "lrc-discord-sync": {
         "title": "LRCDiscordSync",
         "description": "Utility to sync the current song lyrics to Discord status. Updates the user status in real time based on lines from an LRC file. Uses a user token; intended for educational use only."
+      },
+      "nti": {
+        "title": "NTI",
+        "description": "Full-stack platform for the NTI educational institution. Two programme tracks — grant incubation and live practice placement — covering applications, onboarding, project tracking, and reporting. Handles 9 user roles, notifications, dashboards, and a public CMS."
+      },
+      "askd": {
+        "title": "askd",
+        "description": "MCP server that gives coding agents a GUI for asking you questions. Built with Go + Wails v3, lives in the system tray, and supports multi-select, free-form input, and desktop notifications."
+      },
+      "discord-webhook-mcp": {
+        "title": "discord-webhook-mcp",
+        "description": "MCP server for sending messages to Discord via webhooks. Supports text, embeds, polls, files, link buttons, and forum threads."
+      },
+      "curtains": {
+        "title": "curtains",
+        "description": "Tiny TUI for force-killing Windows processes. Shows only real application windows, skips background and system processes — single portable binary."
+      },
+      "win-orchestra": {
+        "title": "WinOrchestra",
+        "description": "CLI tool for controlling Windows windows — list, focus, minimize, close. Go rewrite of WindowManager using Cobra + Win32 API for compact binaries and JSON output."
       }
     }
   },

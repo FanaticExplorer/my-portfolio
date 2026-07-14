@@ -125,6 +125,26 @@
       "lrc-discord-sync": {
         "title": "LRCDiscordSync",
         "description": "Utilita na synchronizáciu textu aktuálnej skladby so statusom v Discorde. Aktualizuje status v reálnom čase podľa riadku z LRC súboru. Používa User Token; určené len na vzdelávacie účely."
+      },
+      "nti": {
+        "title": "NTI",
+        "description": "Full-stack platforma pre vzdelávaciu inštitúciu NTI. Dva programové tracky — grantový inkubátor a live prax — pokrývajúce prihlášky, onboarding, sledovanie projektov a reporting. Zvláda 9 používateľských rolí, notifikácie, dashboardy a verejný CMS."
+      },
+      "askd": {
+        "title": "askd",
+        "description": "MCP server, ktorý dáva coding agentom GUI na kladenie otázok. Napísaný v Go + Wails v3, žije v system traye, podporuje multi-select, voľný text a desktopové notifikácie."
+      },
+      "discord-webhook-mcp": {
+        "title": "discord-webhook-mcp",
+        "description": "MCP server na odosielanie správ do Discordu cez webhooky. Podporuje text, embedy, ankety, súbory, linkové tlačidlá a vlákna fór."
+      },
+      "curtains": {
+        "title": "curtains",
+        "description": "Maličký TUI na násilné ukončovanie Windows procesov. Zobrazuje iba skutočné okná aplikácií, preskakuje systémové procesy na pozadí — jeden prenosný binárny súbor."
+      },
+      "win-orchestra": {
+        "title": "WinOrchestra",
+        "description": "CLI nástroj na správu okien Windows — zoznam, fokus, minimalizácia, zatvorenie. Prepis WindowManagera do Go s použitím Cobra + Win32 API pre kompaktné binárky a JSON výstup."
       }
     }
   },
