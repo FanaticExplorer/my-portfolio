@@ -1,6 +1,6 @@
 import { motion, type HTMLMotionProps } from 'framer-motion'
 
-export interface CardProps extends HTMLMotionProps<'div'> {}
+export type CardProps = HTMLMotionProps<'div'>
 
 export function Card({ className = '', ...props }: CardProps) {
   return (

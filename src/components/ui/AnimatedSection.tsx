@@ -1,6 +1,6 @@
 import { motion, type HTMLMotionProps, type Variants } from 'framer-motion'
 
-export interface AnimatedSectionProps extends HTMLMotionProps<'section'> {}
+export type AnimatedSectionProps = HTMLMotionProps<'section'>
 
 const containerVariants: Variants = {
   hidden: { opacity: 0, y: 12 },
