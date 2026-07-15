@@ -6,8 +6,10 @@ import ru from './ru.json'
 import sk from './sk.json'
 import uk from './uk.json'
 
+if (typeof window !== 'undefined') {
+  i18n.use(LanguageDetector)
+}
 i18n
-  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources: {
