@@ -145,6 +145,10 @@
       "win-orchestra": {
         "title": "WinOrchestra",
         "description": "CLI nástroj na správu okien Windows — zoznam, fokus, minimalizácia, zatvorenie. Prepis WindowManagera do Go s použitím Cobra + Win32 API pre kompaktné binárky a JSON výstup."
+      },
+      "homelab": {
+        "title": "Homelab",
+        "description": "Vlastná infraštruktúra na VPS — Docker, Caddy, Tailscale VPN, Jellyfin, Navidrome, monitoring (Beszel, Uptime Kuma) a fail2ban. Hostuje moje weby, mediálny server a osobné služby."
       }
     }
   },

@@ -145,6 +145,10 @@
       "win-orchestra": {
         "title": "WinOrchestra",
         "description": "CLI tool for controlling Windows windows — list, focus, minimize, close. Go rewrite of WindowManager using Cobra + Win32 API for compact binaries and JSON output."
+      },
+      "homelab": {
+        "title": "Homelab",
+        "description": "Self-hosted infrastructure on a VPS — Docker, Caddy, Tailscale VPN, Jellyfin, Navidrome, monitoring (Beszel, Uptime Kuma), and fail2ban. Runs my websites, media server, and personal services."
       }
     }
   },

@@ -4,7 +4,7 @@ export interface Project {
   id: string
   category: ProjectCategory
   techs: string[]
-  githubUrl: string
+  githubUrl?: string
   isFeatured: boolean
 }
 
@@ -126,6 +126,12 @@ export const projects: Project[] = [
     category: 'desktop',
     techs: ['Go', 'Cobra', 'Win32 API'],
     githubUrl: 'https://github.com/FanaticExplorer/WinOrchestra',
+    isFeatured: false,
+  },
+  {
+    id: 'homelab',
+    category: 'other',
+    techs: ['Docker', 'Caddy', 'Tailscale', 'Linux', 'fail2ban'],
     isFeatured: false,
   },
 ]
