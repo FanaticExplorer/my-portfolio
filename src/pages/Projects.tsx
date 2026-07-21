@@ -37,6 +37,7 @@ export function Projects() {
         <meta property="og:title" content={t('seo.projects.title')} />
         <meta property="og:description" content={t('seo.projects.description')} />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://portfolio.fanaticexplorer.dev/projects" />
       </Helmet>
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-7">
         <div>

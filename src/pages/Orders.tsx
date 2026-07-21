@@ -15,6 +15,7 @@ export function Orders() {
         <meta property="og:title" content={t('orders.title')} />
         <meta property="og:description" content={t('orders.subtitle')} />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://portfolio.fanaticexplorer.dev/orders" />
       </Helmet>
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-7">
         <div>

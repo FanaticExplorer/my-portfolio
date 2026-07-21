@@ -65,6 +65,7 @@ export function Contact() {
         <meta property="og:title" content={t('seo.contact.title')} />
         <meta property="og:description" content={t('seo.contact.description')} />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://portfolio.fanaticexplorer.dev/contact" />
       </Helmet>
       <div className="relative -mt-20 overflow-hidden px-6 pt-20">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(232,184,75,0.08),transparent_55%)]" />

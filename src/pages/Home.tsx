@@ -171,6 +171,22 @@ export function Home() {
         <meta property="og:title" content={t('seo.home.title')} />
         <meta property="og:description" content={t('seo.home.description')} />
         <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://portfolio.fanaticexplorer.dev/" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "FanaticExplorer",
+            "url": "https://portfolio.fanaticexplorer.dev/",
+            "jobTitle": "Python Developer",
+            "sameAs": [
+              "https://github.com/FanaticExplorer",
+              "https://t.me/FanaticExplorer",
+              "https://x.com/FanaticExplorer",
+              "https://freelancehunt.com/freelancer/FanaticExplorer.html"
+            ]
+          })}
+        </script>
       </Helmet>
       <AnimatedSection
         className="relative -mt-20 flex min-h-[70vh] items-center overflow-hidden px-6 pt-20"
