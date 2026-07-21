@@ -102,6 +102,10 @@
         "title": "LifehackHub",
         "description": "Semester project for the \"Frontend Technologies\" course. SPA with a collection of productivity lifehacks. Lifehacks are stored in JSON. Supports filtering by category, viewing details, and saving favorites."
       },
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "This website. React SPA with Tailwind, 4-language i18n, and build-time prerendering for SEO. Deployed via GitHub Actions — pushes to main trigger a build, prerender 4 pages, and rsync to a Caddy-served VPS. Zero manual steps."
+      },
       "genius-cleaner": {
         "title": "GeniusCleaner",
         "description": "Published Firefox extension that cleans Genius.com pages from annotations, popups, and highlights, leaving only lyrics. Works with scrolling and dynamic content loading."

@@ -102,6 +102,10 @@
         "title": "LifehackHub",
         "description": "Semestrálny projekt pre kurz \"Frontend technológie\". SPA aplikácia so zbierkou lifehackov pre produktivitu. Lifehacky sú uložené v JSON. Umožňuje filtrovať podľa kategórií, prezerať detaily a ukladať obľúbené."
       },
+      "portfolio": {
+        "title": "Portfolio",
+        "description": "Táto stránka. React SPA s Tailwindom, 4-jazyčným i18n a prerenderingom pri build-e pre SEO. Deployment cez GitHub Actions — push do main spustí build, prerender 4 stránok a rsync na VPS pod Caddy. Žiadne manuálne kroky."
+      },
       "genius-cleaner": {
         "title": "GeniusCleaner",
         "description": "Publikované rozšírenie pre Firefox, ktoré čistí stránky Genius.com od anotácií, vyskakovacích okien a zvýraznení, ponecháva iba čistý text piesní. Funguje pri skrolovaní a dynamickom načítaní obsahu."

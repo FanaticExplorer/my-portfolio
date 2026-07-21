@@ -72,6 +72,13 @@ export const projects: Project[] = [
     isFeatured: false,
   },
   {
+    id: 'portfolio',
+    category: 'web',
+    techs: ['React', 'TypeScript', 'Tailwind', 'GitHub Actions', 'Caddy'],
+    githubUrl: 'https://github.com/FanaticExplorer/my-portfolio',
+    isFeatured: false,
+  },
+  {
     id: 'uni-nfl-fantasy-dwh',
     category: 'data',
     techs: ['SQL', 'Snowflake'],
