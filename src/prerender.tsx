@@ -1,6 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
 import { type ReactNode } from 'react'
-import { renderToString } from 'react-dom/server'
+import { renderToStaticMarkup } from 'react-dom/server'
 import { StaticRouter } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import './i18n/config'
@@ -41,7 +41,7 @@ export async function prerender(data: { url: string }) {
   }
 
   const helmetContext: Record<string, unknown> = {}
-  const html = renderToString(
+  const html = renderToStaticMarkup(
     <HelmetProvider context={helmetContext}>
       <StaticRouter location={url}>
         <PageShell>
