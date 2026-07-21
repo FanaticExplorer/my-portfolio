@@ -23,23 +23,6 @@ export function Footer() {
               />
             </svg>
           </a>
-          <a
-            href="mailto:the.fanatic.explorer@gmail.com"
-            className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-[#2a2a2a] text-[#f0f0f0] transition hover:border-[#e8b84b] hover:text-[#e8b84b]"
-            aria-label={t('footer.aria.email')}
-          >
-            <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" aria-hidden="true">
-              <path
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2Z"
-              />
-              <polyline fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" points="22,6 12,13 2,6" />
-            </svg>
-          </a>
         </div>
       </div>
     </footer>
