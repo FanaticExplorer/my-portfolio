@@ -5,28 +5,8 @@ export interface Order {
 
 export const orders: Order[] = [
   {
-    id: 'telegram-channel-parse',
-    techs: ['pyrogram'],
-  },
-  {
-    id: 'discord-account-checker',
-    techs: ['Discord API', 'requests'],
-  },
-  {
-    id: 'telegram-neuro-commentator',
-    techs: ['pyrogram', 'OpenAI API'],
-  },
-  {
-    id: 'reddit-autoposter',
-    techs: ['PRAW', 'Reddit'],
-  },
-  {
-    id: 'python-cgi-flask',
-    techs: ['Flask'],
-  },
-  {
-    id: 'account-registration-script',
-    techs: ['Playwright'],
+    id: 'discord-temp-vc-bot',
+    techs: ['Python', 'Pycord', 'aiosqlite', 'Docker', 'GitHub Actions'],
   },
   {
     id: 'binance-auth-bypass',
@@ -37,27 +17,47 @@ export const orders: Order[] = [
     techs: ['pyrogram', 'OpenAI API'],
   },
   {
-    id: 'binance-two-sessions',
-    techs: ['Cookies'],
-  },
-  {
     id: 'automation-mailing',
     techs: ['Playwright', 'Flet'],
-  },
-  {
-    id: 'run-script',
-    techs: ['Linux', 'SSH'],
-  },
-  {
-    id: 'discord-srm-deploy',
-    techs: ['Python', 'Pycord', 'PyYAML', 'Loguru'],
   },
   {
     id: 'discord-mod-bot',
     techs: ['Python', 'Pycord', 'PyYAML', 'Loguru'],
   },
   {
-    id: 'discord-temp-vc-bot',
-    techs: ['Python', 'Pycord', 'aiosqlite', 'Docker', 'GitHub Actions'],
+    id: 'discord-srm-deploy',
+    techs: ['Python', 'Pycord', 'PyYAML', 'Loguru'],
+  },
+  {
+    id: 'reddit-autoposter',
+    techs: ['PRAW', 'Reddit'],
+  },
+  {
+    id: 'telegram-neuro-commentator',
+    techs: ['pyrogram', 'OpenAI API'],
+  },
+  {
+    id: 'account-registration-script',
+    techs: ['Playwright'],
+  },
+  {
+    id: 'discord-account-checker',
+    techs: ['Discord API', 'requests'],
+  },
+  {
+    id: 'telegram-channel-parse',
+    techs: ['pyrogram'],
+  },
+  {
+    id: 'binance-two-sessions',
+    techs: ['Cookies'],
+  },
+  {
+    id: 'python-cgi-flask',
+    techs: ['Flask'],
+  },
+  {
+    id: 'run-script',
+    techs: ['Linux', 'SSH'],
   },
 ]
