@@ -189,8 +189,8 @@
       },
       "telegram-chatgpt-userbot": {
         "title": "Realistic ChatGPT companion userbot",
-        "description": "Advanced Telegram userbot on Pyrogram + GPT-3.5-turbo that held conversations like a real person with human-like action emulation and consulted about company services.",
-        "review": "Everything was done perfectly, recommended!"
+        "description": "Advanced Telegram userbot on Pyrogram + GPT that held conversations like a real person with human-like action emulation and consulted about company services.",
+                "review": "Everything was done perfectly, recommended!"
       },
       "binance-two-sessions": {
         "title": "Bypassing limits and running two Binance sessions",
@@ -209,8 +209,8 @@
       },
       "telegram-captcha-free-groups": {
         "title": "Bot for finding captcha-free groups",
-        "description": "Automated search for Telegram groups and channels for outreach. Filtering via GPT-4o-mini to exclude groups with captchas.",
-        "review": "A star task, but the order was completed successfully. Thank you."
+        "description": "Automated search for Telegram groups and channels for outreach. Filtering via GPT to exclude groups with captchas.",
+                "review": "A star task, but the order was completed successfully. Thank you."
       }
     }
   },

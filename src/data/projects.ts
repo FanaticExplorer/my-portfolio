@@ -56,7 +56,7 @@ export const projects: Project[] = [
     category: 'web',
     techs: ['JavaScript', 'HTML'],
     githubUrl: 'https://github.com/FanaticExplorer/GeniusCleaner',
-    isFeatured: true,
+    isFeatured: false,
   },
   {
     id: 'pear-cleaner',
@@ -70,7 +70,7 @@ export const projects: Project[] = [
     category: 'other',
     techs: ['Python', 'FFmpeg', 'OBS Studio'],
     githubUrl: 'https://github.com/FanaticExplorer/RecordingConverter',
-    isFeatured: true,
+    isFeatured: false,
   },
   {
     id: 'uni-nfl-fantasy-dwh',
@@ -98,14 +98,14 @@ export const projects: Project[] = [
     category: 'web',
     techs: ['Python', 'FastAPI', 'SQLAlchemy', 'PostgreSQL', 'Docker', 'Vue'],
     githubUrl: 'https://github.com/FanaticExplorer/nti-backend',
-    isFeatured: false,
+    isFeatured: true,
   },
   {
     id: 'askd',
     category: 'desktop',
     techs: ['Go', 'Wails', 'WebView2', 'MCP', 'HTML/CSS/JS'],
     githubUrl: 'https://github.com/FanaticExplorer/askd',
-    isFeatured: false,
+    isFeatured: true,
   },
   {
     id: 'discord-webhook-mcp',

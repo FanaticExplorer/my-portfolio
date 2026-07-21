@@ -189,8 +189,8 @@
       },
       "telegram-chatgpt-userbot": {
         "title": "Realistický userbot-spoločník s ChatGPT",
-        "description": "Pokročilý Telegram userbot na Pyrogram + GPT-3.5-turbo, ktorý viedol rozhovor čo najviac ako živý človek s emuláciou ľudských akcií a konzultoval služby firmy.",
-        "review": "Všetko je spravené výborne, odporúčam!"
+        "description": "Pokročilý Telegram userbot na Pyrogram + GPT, ktorý viedol rozhovor čo najviac ako živý človek s emuláciou ľudských akcií a konzultoval služby firmy.",
+                "review": "Všetko je spravené výborne, odporúčam!"
       },
       "binance-two-sessions": {
         "title": "Obídenie obmedzení a podpora dvoch relácií na Binance",
@@ -209,8 +209,8 @@
       },
       "telegram-captcha-free-groups": {
         "title": "Bot na vyhľadávanie skupín bez captchy",
-        "description": "Automatizované vyhľadávanie Telegram skupín a kanálov pre rozosielky. Filtrovanie cez GPT-4o-mini na vylúčenie skupín s captchou.",
-        "review": "Úloha s hviezdičkou, ale objednávka bola splnená úspešne. Ďakujem."
+        "description": "Automatizované vyhľadávanie Telegram skupín a kanálov pre rozosielky. Filtrovanie cez GPT na vylúčenie skupín s captchou.",
+                "review": "Úloha s hviezdičkou, ale objednávka bola splnená úspešne. Ďakujem."
       }
     }
   },

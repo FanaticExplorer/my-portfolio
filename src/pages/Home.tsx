@@ -23,8 +23,8 @@ const featuredProjects = projects.filter((project) => project.isFeatured).slice(
 
 const featuredOrderIds = [
   'telegram-chatgpt-userbot',
-  'telegram-captcha-free-groups',
   'binance-auth-bypass',
+  'automation-mailing',
 ]
 
 const featuredOrders = featuredOrderIds
