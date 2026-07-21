@@ -51,14 +51,11 @@ export async function prerender(data: { url: string }) {
     </HelmetProvider>,
   )
 
-  const helmet = (helmetContext as { helmet?: { title?: { toString: () => string } } }).helmet
-
   return {
     html,
     links: new Set(pageLinks[url] || []),
     head: {
       lang: 'en',
-      title: helmet?.title?.toString() || 'FanaticExplorer',
     },
   }
 }
