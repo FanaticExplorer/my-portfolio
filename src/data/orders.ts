@@ -37,6 +37,10 @@ export const orders: Order[] = [
     techs: ['pyrogram', 'OpenAI API'],
   },
   {
+    id: 'telegram-captcha-free-groups',
+    techs: ['pyrogram', 'OpenAI API'],
+  },
+  {
     id: 'account-registration-script',
     techs: ['Playwright'],
   },
