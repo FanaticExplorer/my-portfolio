@@ -214,7 +214,19 @@
       "telegram-captcha-free-groups": {
         "title": "Bot na vyhľadávanie skupín bez captchy",
         "description": "Automatizované vyhľadávanie Telegram skupín a kanálov pre rozosielky. Filtrovanie cez GPT na vylúčenie skupín s captchou.",
-                "review": "Úloha s hviezdičkou, ale objednávka bola splnená úspešne. Ďakujem."
+        "review": "Úloha s hviezdičkou, ale objednávka bola splnená úspešne. Ďakujem."
+      },
+      "discord-srm-deploy": {
+        "title": "Nasadenie SuperRoleManagera",
+        "description": "Nasadenie a konfigurácia SuperRoleManagera pre server s 4000+ členmi. Nastavené hierarchické štruktúry rolí s viacerými samopriraďovacími kategóriami, vlastná YAML konfigurácia a hot-reload — žiadne reštarty bota počas ladenia."
+      },
+      "discord-mod-bot": {
+        "title": "Discord moderátorský a úžitkový bot",
+        "description": "Súkromný bot na moderáciu a utility pre server s 4000+ členmi. Vlastný /quarantine systém, sledovanie DISBOARD bumpov s rebríčkom a míľnikmi v rolách, plus ďalšie príkazy šité na mieru serveru."
+      },
+      "discord-temp-vc-bot": {
+        "title": "Bot na dočasné hlasové kanály",
+        "description": "Súkromný bot generujúci dočasné hlasové kanály s vlastným dizajnom a funkciami, aké iné boty nemajú. Tímový projekt: GitHub organizácia, CI/CD cez GitHub Actions, viacstupňový Docker s Compose overlays (dev/staging/prod), Traefik reverse proxy a GHCR."
       }
     }
   },

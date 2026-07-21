@@ -214,7 +214,19 @@
       "telegram-captcha-free-groups": {
         "title": "Bot for finding captcha-free groups",
         "description": "Automated search for Telegram groups and channels for outreach. Filtering via GPT to exclude groups with captchas.",
-                "review": "A star task, but the order was completed successfully. Thank you."
+        "review": "A star task, but the order was completed successfully. Thank you."
+      },
+      "discord-srm-deploy": {
+        "title": "SuperRoleManager deployment",
+        "description": "Deployed and configured SuperRoleManager for a 4,000+ member server. Set up hierarchical role structures with multiple self-assignable categories, custom YAML config, and hot-reload support — no bot restarts needed during tuning."
+      },
+      "discord-mod-bot": {
+        "title": "Discord moderation & utility bot",
+        "description": "Private moderation and utility bot for a 4,000+ member server. Custom /quarantine system, DISBOARD bump tracking with leaderboard and role milestones, plus other server-tailored commands."
+      },
+      "discord-temp-vc-bot": {
+        "title": "Temporary voice channels bot",
+        "description": "Private bot generating temporary voice channels with custom design and features not seen in other bots. Team project with GitHub organization, CI/CD via GitHub Actions, multi-stage Docker with Compose overlays (dev/staging/prod), Traefik reverse proxy, and GHCR."
       }
     }
   },

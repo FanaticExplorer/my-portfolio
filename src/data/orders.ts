@@ -49,7 +49,15 @@ export const orders: Order[] = [
     techs: ['Linux', 'SSH'],
   },
   {
-    id: 'telegram-captcha-free-groups',
-    techs: ['pyrogram'],
+    id: 'discord-srm-deploy',
+    techs: ['Python', 'Pycord', 'PyYAML', 'Loguru'],
+  },
+  {
+    id: 'discord-mod-bot',
+    techs: ['Python', 'Pycord', 'PyYAML', 'Loguru'],
+  },
+  {
+    id: 'discord-temp-vc-bot',
+    techs: ['Python', 'Pycord', 'aiosqlite', 'Docker', 'GitHub Actions'],
   },
 ]
