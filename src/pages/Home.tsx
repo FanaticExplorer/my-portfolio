@@ -276,6 +276,11 @@ export function Home() {
                 <p className="text-sm text-[#888888]">
                   {t(`projects.items.${project.id}.description`)}
                 </p>
+                <div className="flex flex-wrap gap-2 mt-auto">
+                  {project.techs.map((tech) => (
+                    <Badge key={`${project.id}-${tech}`} label={tech} variant="tech" />
+                  ))}
+                </div>
               </Card>
             ))}
           </motion.div>
@@ -322,6 +327,11 @@ export function Home() {
                 <p className="text-sm text-[#888888]">
                   {t(`orders.items.${order.id}.description`)}
                 </p>
+                <div className="flex flex-wrap gap-2 mt-auto">
+                  {order.techs.map((tech) => (
+                    <Badge key={`${order.id}-${tech}`} label={tech} variant="tech" />
+                  ))}
+                </div>
               </Card>
             ))}
           </motion.div>
