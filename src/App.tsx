@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next'
 import { Home, ArrowUpRight } from 'lucide-react'
 import { Footer } from './components/ui/Footer'
 import { Navbar } from './components/ui/Navbar'
+import { ScrollToTop } from './components/ScrollToTop'
 import { Contact } from './pages/Contact'
 import { Orders } from './pages/Orders'
 import { Home as HomePage } from './pages/Home'
@@ -77,6 +78,7 @@ function App() {
   return (
     <Router>
       <Helmet htmlAttributes={{ lang: i18n.language }} />
+      <ScrollToTop />
       <Navbar />
       <main className="pt-20">
         <AnimatedRoutes />
