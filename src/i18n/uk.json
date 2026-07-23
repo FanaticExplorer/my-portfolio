@@ -152,7 +152,7 @@
       },
       "homelab": {
         "title": "Homelab",
-        "description": "Власна інфраструктура на VPS — Docker, Caddy, Tailscale VPN, Jellyfin, Navidrome, моніторинг (Beszel, Uptime Kuma) і fail2ban. Хостить мої сайти, медіасервер і особисті сервіси."
+        "description": "Власна інфраструктура на VPS — Docker, Caddy, Tailscale VPN, Jellyfin, Navidrome, Portainer, моніторинг (Beszel, Uptime Kuma, OpenObserve) і fail2ban. Хостить мої сайти, медіасервер і особисті сервіси."
       }
     }
   },

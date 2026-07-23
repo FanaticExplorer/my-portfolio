@@ -47,7 +47,7 @@ export const projects: Project[] = [
   {
     id: 'homelab',
     category: 'other',
-    techs: ['Docker', 'Caddy', 'Tailscale', 'Linux', 'fail2ban'],
+    techs: ['Docker', 'Caddy', 'Tailscale', 'Linux', 'fail2ban', 'OpenObserve', 'Portainer']
     isFeatured: false,
   },
   {
