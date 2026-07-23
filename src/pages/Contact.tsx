@@ -45,11 +45,12 @@ export function Contact() {
     const form = e.currentTarget
     const data = new FormData(form)
     try {
-      await fetch(form.action, {
+      const response = await fetch(form.action, {
         method: 'POST',
         body: data,
         headers: { Accept: 'application/json' },
       })
+      if (!response.ok) throw new Error('Failed')
       setStatus('success')
       form.reset()
     } catch {
