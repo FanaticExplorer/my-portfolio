@@ -10,10 +10,10 @@ export function Orders() {
   return (
     <section className="min-h-screen bg-[#0e0e0e] px-6 py-16 text-[#f0f0f0]">
       <Helmet>
-        <title>{t('orders.title')}</title>
-        <meta name="description" content={t('orders.subtitle')} />
-        <meta property="og:title" content={t('orders.title')} />
-        <meta property="og:description" content={t('orders.subtitle')} />
+        <title>{t('seo.orders.title')}</title>
+        <meta name="description" content={t('seo.orders.description')} />
+        <meta property="og:title" content={t('seo.orders.title')} />
+        <meta property="og:description" content={t('seo.orders.description')} />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://portfolio.fanaticexplorer.dev/orders" />
       </Helmet>

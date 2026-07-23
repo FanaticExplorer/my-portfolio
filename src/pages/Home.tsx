@@ -136,7 +136,49 @@ function ParticleField() {
       animationId = window.requestAnimationFrame(update)
     }
 
+    const drawStatic = () => {
+      ctx.clearRect(0, 0, width, height)
+
+      for (let i = 0; i < particles.length; i += 1) {
+        const a = particles[i]
+        for (let j = i + 1; j < particles.length; j += 1) {
+          const b = particles[j]
+          const dx = a.x - b.x
+          const dy = a.y - b.y
+          const distance = Math.hypot(dx, dy)
+
+          if (distance < 140) {
+            const alpha = 0.2 * (1 - distance / 140)
+            ctx.strokeStyle = `rgba(232, 184, 75, ${alpha})`
+            ctx.lineWidth = 1
+            ctx.beginPath()
+            ctx.moveTo(a.x, a.y)
+            ctx.lineTo(b.x, b.y)
+            ctx.stroke()
+          }
+        }
+      }
+
+      for (const particle of particles) {
+        ctx.fillStyle = 'rgba(240, 240, 240, 0.65)'
+        ctx.beginPath()
+        ctx.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2)
+        ctx.fill()
+      }
+    }
+
     resize()
+
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+    if (prefersReduced) {
+      drawStatic()
+      window.addEventListener('resize', resize)
+      return () => {
+        window.removeEventListener('resize', resize)
+      }
+    }
+
     update()
 
     window.addEventListener('resize', resize)

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Mail, Send, Briefcase } from 'lucide-react'
 import { Helmet } from 'react-helmet-async'
@@ -37,6 +37,13 @@ export function Contact() {
   const [loading, setLoading] = useState(false)
   const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle')
   const { t } = useTranslation()
+
+  useEffect(() => {
+    if (status === 'success' || status === 'error') {
+      const timer = setTimeout(() => setStatus('idle'), 5000)
+      return () => clearTimeout(timer)
+    }
+  }, [status])
 
   const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault()
