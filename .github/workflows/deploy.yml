@@ -3,10 +3,19 @@ name: Deploy
 on:
   push:
     branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 3
 
     steps:
       - uses: actions/checkout@v4
@@ -14,12 +23,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
 
       - run: npm ci
 
-      - run: npm run build
+      - name: Build (typecheck + prerender)
+        run: npm run build
 
-      - uses: easingthemes/ssh-deploy@v5.1.0
+      - name: Deploy via rsync
+        uses: easingthemes/ssh-deploy@v5.1.0
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-rlgoDzvc --delete"
@@ -27,3 +39,6 @@ jobs:
           REMOTE_HOST: ${{ secrets.SSH_HOST }}
           REMOTE_USER: ${{ secrets.SSH_USER }}
           TARGET: ${{ secrets.DEPLOY_PATH }}
+
+      - name: Health check
+        run: curl -fsS "https://portfolio.fanaticexplorer.dev" | grep -qi "<title>"
