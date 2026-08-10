@@ -31,6 +31,13 @@ export const projects: Project[] = [
     isFeatured: true,
   },
   {
+    id: 'accessflow',
+    category: 'bots',
+    techs: ['Python', 'Pycord', 'SQLite', 'Pydantic', 'Docker'],
+    githubUrl: 'https://github.com/FanaticExplorer/accessflow',
+    isFeatured: false,
+  },
+  {
     id: 'discord-webhook-mcp',
     category: 'bots',
     techs: ['Python', 'FastMCP', 'Discord API'],

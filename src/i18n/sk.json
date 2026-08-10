@@ -82,6 +82,10 @@
         "title": "SuperRoleManager",
         "description": "Konfigurovateľný Discord bot na správu samopriraďovaných rolí. Roly sa nastavujú cez YAML súbor, podporuje single- aj multi-select kategórie, tlačidlá s aktuálnym stavom a hot reload konfigurácie bez reštartu bota."
       },
+      "accessflow": {
+        "title": "AccessFlow",
+        "description": "Discord bot na onboarding s plne konfigurovateľným procesom prihlášok. Admini zverejnia uvítací embed s perzistentným tlačidlom Get Started — používatelia vyplnia modálny formulár a prihláška sa odošle adminom na posúdenie (Accept/Deny/Open-ticket) alebo rovno vytvorí súkromný ticket kanál. Plne konfigurovateľné cez TOML — bez zmien kódu."
+      },
       "emojies-parser": {
         "title": "EmojiesParser",
         "description": "Nástroj na hromadné sťahovanie emodži a stickerov z verejných Discord serverov. Podporuje statické aj animované emodži, zbiera metadáta a štruktúruje výsledok do JSON a priečinkov."

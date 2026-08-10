@@ -82,6 +82,10 @@
         "title": "SuperRoleManager",
         "description": "Configurable Discord bot for managing self-assignable roles. Roles are defined in a YAML file, supports single- and multi-select categories, buttons with current state, and hot reloading the config without restarting the bot."
       },
+      "accessflow": {
+        "title": "AccessFlow",
+        "description": "Discord onboarding bot with a fully configurable application flow. Admins post a welcome embed with a persistent Get Started button — users fill out a modal, and the application routes to admins for review (Accept/Deny/Open-ticket) or directly creates a private ticket channel. Fully configurable via TOML — no code changes needed."
+      },
       "emojies-parser": {
         "title": "EmojiesParser",
         "description": "Tool for bulk downloading emojis and stickers from public Discord servers. Supports both static and animated emojis, collects metadata, and organizes results into JSON and folders."
