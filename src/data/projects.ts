@@ -45,6 +45,13 @@ export const projects: Project[] = [
     isFeatured: false,
   },
   {
+    id: 'keyaura-cli',
+    category: 'desktop',
+    techs: ['Go', 'Windows', 'RGB', 'CLI'],
+    githubUrl: 'https://github.com/FanaticExplorer/keyaura-cli',
+    isFeatured: false,
+  },
+  {
     id: 'win-orchestra',
     category: 'desktop',
     techs: ['Go', 'Cobra', 'Win32 API'],

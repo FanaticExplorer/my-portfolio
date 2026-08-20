@@ -150,6 +150,10 @@
         "title": "curtains",
         "description": "Maličký TUI na násilné ukončovanie Windows procesov. Zobrazuje iba skutočné okná aplikácií, preskakuje systémové procesy na pozadí — jeden prenosný binárny súbor."
       },
+      "keyaura-cli": {
+        "title": "KeyAura CLI",
+        "description": "Malá Windows CLI utilita na ovládanie podsvietenia klávesnice na notebookoch ASUS ROG. Podporuje úrovne jasu od 0 do 3 a statické RGB farby cez ASUS Aura HID, pričom obsahuje hotový Windows binárny súbor."
+      },
       "win-orchestra": {
         "title": "WinOrchestra",
         "description": "CLI nástroj na správu okien Windows — zoznam, fokus, minimalizácia, zatvorenie. Prepis WindowManagera do Go s použitím Cobra + Win32 API pre kompaktné binárky a JSON výstup."

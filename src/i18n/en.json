@@ -150,6 +150,10 @@
         "title": "curtains",
         "description": "Tiny TUI for force-killing Windows processes. Shows only real application windows, skips background and system processes — single portable binary."
       },
+      "keyaura-cli": {
+        "title": "KeyAura CLI",
+        "description": "Small Windows CLI for controlling the keyboard backlight on ASUS ROG laptops. Supports brightness levels from 0 to 3 and static RGB colors via ASUS Aura HID, with a ready-to-use Windows binary."
+      },
       "win-orchestra": {
         "title": "WinOrchestra",
         "description": "CLI tool for controlling Windows windows — list, focus, minimize, close. Go rewrite of WindowManager using Cobra + Win32 API for compact binaries and JSON output."
