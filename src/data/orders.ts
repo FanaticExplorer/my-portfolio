@@ -9,6 +9,10 @@ export const orders: Order[] = [
     techs: ['Python', 'Pycord', 'aiosqlite', 'Docker', 'GitHub Actions'],
   },
   {
+    id: 'discord-verification-bot',
+    techs: ['Python', 'Pycord', 'SQLite', 'Pydantic', 'Docker'],
+  },
+  {
     id: 'binance-auth-bypass',
     techs: ['DevTools'],
   },

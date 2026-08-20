@@ -239,6 +239,10 @@
       "discord-temp-vc-bot": {
         "title": "Bot na dočasné hlasové kanály",
         "description": "Súkromný bot generujúci dočasné hlasové kanály s vlastným dizajnom a funkciami, aké iné boty nemajú. Tímový projekt: GitHub organizácia, CI/CD cez GitHub Actions, viacstupňový Docker s Compose overlays (dev/staging/prod), Traefik reverse proxy a GHCR."
+      },
+      "discord-verification-bot": {
+        "title": "Discord bot na verifikáciu a onboarding",
+        "description": "Prispôsobený Discord bot založený na AccessFlow pre reálnu komunitu. Členovia vyplnia päťotázkovú žiadosť v modálnom okne, zatiaľ čo moderátori vidia údaje účtu, dátum vstupu na server a odpovede a môžu žiadosť prijať, zamietnuť alebo vyžiadať doplnenie so štruktúrovaným dôvodom zamietnutia."
       }
     }
   },

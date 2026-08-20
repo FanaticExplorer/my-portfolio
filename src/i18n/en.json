@@ -239,6 +239,10 @@
       "discord-temp-vc-bot": {
         "title": "Temporary voice channels bot",
         "description": "Private bot generating temporary voice channels with custom design and features not seen in other bots. Team project with GitHub organization, CI/CD via GitHub Actions, multi-stage Docker with Compose overlays (dev/staging/prod), Traefik reverse proxy, and GHCR."
+      },
+      "discord-verification-bot": {
+        "title": "Discord verification & onboarding bot",
+        "description": "Customized Discord verification bot based on AccessFlow for a real community server. Members submit a five-question modal application, while moderators review account details, server join date, answers, and approve, reject, or request clarification with structured rejection reasons."
       }
     }
   },
