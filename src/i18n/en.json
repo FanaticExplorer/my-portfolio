@@ -174,18 +174,18 @@
         "review": "Competent specialist. Master of his craft. I'll know who to contact next time."
       },
       "discord-account-checker": {
-        "title": "Discord server account checker",
-        "description": "Python CLI app for bulk checking whether accounts exist on a specified Discord server, with clean code and error handling.",
+        "title": "Discord membership checker",
+        "description": "Python CLI for checking account membership across a specified Discord server, with result export and robust error handling.",
         "review": "The checker works, the task was completed successfully. Recommended!"
       },
       "telegram-neuro-commentator": {
-        "title": "Neuro-commentator for Telegram posts",
-        "description": "Telegram userbot on Pyrogram + OpenAI that automatically commented on new posts with a natural tone and light promotion.",
+        "title": "AI-assisted Telegram commenting",
+        "description": "Telegram automation tool built with Pyrogram + OpenAI that generated natural-sounding comments for new channel posts with light promotional messaging.",
         "review": "Great specialist. Responsible, always in touch. Very satisfied with the cooperation. Recommended."
       },
       "reddit-autoposter": {
-        "title": "Reddit autoposter / activity boosting",
-        "description": "Automated Reddit posting via PRAW with a spreadsheet binding plus scheduled upvote boosting through an external API.",
+        "title": "Reddit content automation",
+        "description": "Automated Reddit publishing via PRAW with spreadsheet-driven content and scheduled workflow actions through an external API.",
         "review": "Thank you for the professional and prompt work! I especially appreciate the great communication and speed. Recommended for collaboration!"
       },
       "python-cgi-flask": {
@@ -194,28 +194,28 @@
         "review": "Awesome work, everything done in detail."
       },
       "account-registration-script": {
-        "title": "Account registration script",
-        "description": "Built a script for mass account creation without captchas, with intelligent IP management and data filling.",
+        "title": "Automated profile provisioning",
+        "description": "Playwright workflow for creating profiles at scale, with configurable network routing and structured data entry.",
         "review": "Thanks for the work, a good specialist."
       },
       "binance-auth-bypass": {
-        "title": "Parsing Binance page with auth bypass",
-        "description": "Reverse-engineering the Binance Futures Leaderboard page. Implemented parsing without authentication by analyzing API requests (REST API in DevTools).",
+        "title": "Public Binance data integration",
+        "description": "Inspected network requests on a public Binance Futures Leaderboard page, identified the endpoint providing the required data, and documented how to reproduce the request in the client's code.",
         "review": "I will always work with Andriy now. He did what other clients said was impossible. Completed everything quickly and with high quality, highly recommended."
       },
       "telegram-chatgpt-userbot": {
-        "title": "Realistic ChatGPT companion userbot",
-        "description": "Advanced Telegram userbot on Pyrogram + GPT that held conversations like a real person with human-like action emulation and consulted about company services.",
+        "title": "AI Telegram support assistant",
+        "description": "Telegram automation tool on Pyrogram + GPT that maintained natural conversations and answered questions about the client's services.",
                 "review": "Everything was done perfectly, recommended!"
       },
       "binance-two-sessions": {
-        "title": "Bypassing limits and running two Binance sessions",
-        "description": "Find a way to use one Binance session on multiple devices — solution via cookies and transferring them.",
+        "title": "Multi-device session workflow",
+        "description": "Investigated a client workflow for using a Binance session across multiple devices and documented a cookie-based session transfer approach.",
         "review": "Thanks, helped resolve the issue."
       },
       "automation-mailing": {
-        "title": "Automated outreach on low-traffic websites",
-        "description": "Playwright + Flet app for automating messaging on different websites. Delivered a convenient Flutter-based interface for the client.",
+        "title": "Website messaging automation",
+        "description": "Playwright + Flet application for automating messages across multiple websites, with a desktop interface for managing the workflow.",
         "review": "Great communication. Happy with the collaboration."
       },
       "run-script": {
@@ -224,8 +224,8 @@
         "review": "Recommended. Writes to the point, works fast."
       },
       "telegram-captcha-free-groups": {
-        "title": "Bot for finding captcha-free groups",
-        "description": "Automated search for Telegram groups and channels for outreach. Filtering via GPT to exclude groups with captchas.",
+        "title": "Telegram group discovery and filtering",
+        "description": "Automated discovery of Telegram groups and channels for outreach, with GPT-based filtering to exclude communities protected by captchas.",
         "review": "A star task, but the order was completed successfully. Thank you."
       },
       "discord-srm-deploy": {

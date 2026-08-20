@@ -174,18 +174,18 @@
         "review": "Šikovný špecialista. Majster svojho remesla. Budem vedieť, na koho sa nabudúce obrátiť."
       },
       "discord-account-checker": {
-        "title": "Checker účtov na Discord serveri",
-        "description": "Konzolová aplikácia v Pythone na hromadnú kontrolu prítomnosti účtov na zadanom Discord serveri so ukladaním výsledkov, čistým kódom a ošetrením chýb.",
+        "title": "Kontrola členstva na Discorde",
+        "description": "CLI v Pythone na kontrolu členstva účtov v zadanom Discord serveri s exportom výsledkov a spoľahlivým ošetrením chýb.",
         "review": "Checker funguje, úloha bola splnená úspešne. Odporúčam!"
       },
       "telegram-neuro-commentator": {
-        "title": "Neuro-komentátor pod príspevky v Telegrame",
-        "description": "Telegram userbot na Pyrogram + OpenAI, ktorý automaticky komentoval nové príspevky v kanáli s prirodzeným tónom a jemnou propagáciou.",
+        "title": "AI komentovanie v Telegrame",
+        "description": "Nástroj na automatizáciu Telegramu v Pyrogram + OpenAI, ktorý tvoril prirodzene znejúce komentáre pod nové príspevky kanála s jemnou propagáciou.",
         "review": "Skvelý špecialista. Zodpovedný, vždy dostupný. Veľmi spokojný so spoluprácou. Odporúčam."
       },
       "reddit-autoposter": {
-        "title": "Reddit autoposter / zvyšovanie aktivity",
-        "description": "Automatické postovanie na Reddit cez PRAW s napojením na tabuľku a následné plánované zvyšovanie upvotov cez externé API.",
+        "title": "Automatizácia obsahu pre Reddit",
+        "description": "Automatizované publikovanie na Reddit cez PRAW s obsahom z tabuľky a plánovanými úkonmi pracovného procesu cez externé API.",
         "review": "Ďakujem za profesionálne a rýchlo vykonanú úlohu! Osobitne oceňujem skvelú komunikáciu a rýchlosť práce. Odporúčam na spoluprácu!"
       },
       "python-cgi-flask": {
@@ -194,28 +194,28 @@
         "review": "Paráda, všetko spravil do detailov."
       },
       "account-registration-script": {
-        "title": "Skript na registráciu účtov",
-        "description": "Vyvinul skript na hromadnú tvorbu profilov bez captchy s inteligentným riadením IP adries a vypĺňaním dát.",
+        "title": "Automatizované vytváranie profilov",
+        "description": "Playwright workflow na vytváranie profilov vo veľkom meradle s nastaviteľným sieťovým routovaním a štruktúrovaným zadávaním údajov.",
         "review": "Ďakujem za prácu, dobrý odborník."
       },
       "binance-auth-bypass": {
-        "title": "Parsovanie stránky Binance s obídením autorizácie",
-        "description": "Reverse-engineering stránky Binance Futures Leaderboard. Implementované parsovanie bez autorizácie cez analýzu API požiadaviek (REST API v DevTools).",
+        "title": "Integrácia verejných dát Binance",
+        "description": "Preskúmal som sieťové požiadavky verejnej stránky Binance Futures Leaderboard, našiel endpoint s potrebnými dátami a klientovi zdokumentoval, ako požiadavku zopakovať v jeho kóde.",
         "review": "Budeme teraz vždy spolupracovať s Andrijom, urobil to, čo iní zákazníci tvrdili, že je nemožné. Všetko spravil rýchlo a kvalitne, úprimne odporúčam."
       },
       "telegram-chatgpt-userbot": {
-        "title": "Realistický userbot-spoločník s ChatGPT",
-        "description": "Pokročilý Telegram userbot na Pyrogram + GPT, ktorý viedol rozhovor čo najviac ako živý človek s emuláciou ľudských akcií a konzultoval služby firmy.",
+        "title": "AI asistent podpory v Telegrame",
+        "description": "Nástroj na automatizáciu Telegramu v Pyrogram + GPT, ktorý viedol prirodzené rozhovory a odpovedal na otázky o službách spoločnosti.",
                 "review": "Všetko je spravené výborne, odporúčam!"
       },
       "binance-two-sessions": {
-        "title": "Obídenie obmedzení a podpora dvoch relácií na Binance",
-        "description": "Nájsť spôsob, ako mať jednu reláciu Binance na viacerých zariadeniach — riešenie cez cookies a ich prenos.",
+        "title": "Práca so session na viacerých zariadeniach",
+        "description": "Preskúmanie klientskeho workflow na používanie Binance session na viacerých zariadeniach a zdokumentovanie prístupu s prenosom session cez cookies.",
         "review": "Ďakujem, pomohol vyriešiť problém."
       },
       "automation-mailing": {
-        "title": "Automatizácia rozosielania na menej populárnych weboch",
-        "description": "Aplikácia na Playwright + Flet na automatizáciu posielania správ na rôznych webových stránkach. Vytvorené pohodlné Flutter rozhranie pre klienta.",
+        "title": "Automatizácia správ na webových stránkach",
+        "description": "Aplikácia na Playwright + Flet na automatizáciu správ na rôznych webových stránkach s desktopovým rozhraním na riadenie workflow.",
         "review": "Dobrá komunikácia. So spoluprácou som spokojný."
       },
       "run-script": {
@@ -224,8 +224,8 @@
         "review": "Odporúčam. Píše vecne, robí rýchlo."
       },
       "telegram-captcha-free-groups": {
-        "title": "Bot na vyhľadávanie skupín bez captchy",
-        "description": "Automatizované vyhľadávanie Telegram skupín a kanálov pre rozosielky. Filtrovanie cez GPT na vylúčenie skupín s captchou.",
+        "title": "Vyhľadávanie a filtrovanie Telegram skupín",
+        "description": "Automatizované vyhľadávanie Telegram skupín a kanálov pre outreach s filtrovaním cez GPT, ktoré vylúči komunity chránené captchou.",
         "review": "Úloha s hviezdičkou, ale objednávka bola splnená úspešne. Ďakujem."
       },
       "discord-srm-deploy": {
