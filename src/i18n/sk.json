@@ -172,7 +172,7 @@
   },
   "orders": {
     "title": "Zákazky",
-    "subtitle": "Vybrané projekty automatizácie a botov vytvorené pre klientov. Na platformách Telegram, web a desktop.",
+    "subtitle": "Skutočné projekty. Skutočné výsledky.",
     "trustLine": "0 arbitráží · Top-4% v Pythone (167 / 4609) · Top-5% vo vývoji botov (93 / 2230)",
     "items": {
       "telegram-channel-parse": {
