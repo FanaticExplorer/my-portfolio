@@ -29,6 +29,7 @@ export default defineConfig({
     forceExitPlugin(),
   ],
   server: {
-    allowedHosts: ['.zrok.io']
+    host: '127.0.0.1',
+    allowedHosts: ['.zrok.io'],
   }
 })
