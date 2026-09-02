@@ -2,6 +2,7 @@
   "app": {
     "notFound": "Page not found"
   },
+  "availability": "Open for new projects",
   "seo": {
     "home": {
       "title": "FanaticExplorer — Python Developer Portfolio",
@@ -19,6 +20,10 @@
       "title": "Contact — Send a Project Request",
       "description": "Send a project request, share task details, and choose a preferred contact method such as Telegram, GitHub, X, or email. Fast reply and clear next steps."
     },
+    "about": {
+      "title": "About — FanaticExplorer",
+      "description": "About FanaticExplorer: an Applied Informatics student in Nitra, based in Bratislava, building Discord bots, Go CLI tools, and AI agent tooling."
+    },
     "notFound": {
       "title": "Page Not Found — FanaticExplorer",
       "description": "The requested page could not be found. Use the navigation to return home, view projects, or reach out directly. You can also switch language. Need help? Contact"
@@ -28,6 +33,7 @@
     "home": "Home",
     "projects": "Projects",
     "orders": "Orders",
+    "about": "About",
     "contact": "Contact",
     "menu": "Menu",
     "openMenu": "Open menu",
@@ -108,7 +114,7 @@
       },
       "portfolio": {
         "title": "Portfolio",
-        "description": "This website. React SPA with Tailwind, 4-language i18n, and build-time prerendering for SEO. Deployed via GitHub Actions — pushes to main trigger a build, prerender 4 pages, and rsync to a Caddy-served VPS. Zero manual steps."
+        "description": "This website. React SPA with Tailwind, 4-language i18n, and build-time prerendering for SEO. Deployed via GitHub Actions — pushes to main trigger a build, prerender 5 pages, and rsync to a Caddy-served VPS. Zero manual steps."
       },
       "genius-cleaner": {
         "title": "GeniusCleaner",
@@ -167,6 +173,7 @@
   "orders": {
     "title": "Orders",
     "subtitle": "Real work. Real results.",
+    "trustLine": "0 arbitrations · Top-4% in Python (167 / 4609) · Top-5% in bot development (93 / 2230)",
     "items": {
       "telegram-channel-parse": {
         "title": "Telegram channel parsing",
@@ -246,6 +253,13 @@
       }
     }
   },
+  "about": {
+    "title": "About me",
+    "p1": "My name is Andrew. I've been writing code since I was 12 — it started with informatics olympiads in Pascal.",
+    "p2": "What I enjoy most is figuring out systems that aren't mine: closed APIs, unconventional automation, bots that behave like real people. Right now the focus is production Discord bots, Windows utilities in Go, and MCP servers for AI agents. My stack is Python and Go.",
+    "p3": "Student of Applied Informatics at UKF (Nitra). I live in Slovakia: Ukrainian and Russian — native, Slovak B2, English B2.",
+    "p4": "Open to freelance work and job offers. Telegram is the fastest way to reach me."
+  },
   "contact": {
     "form": {
       "title": "Send a request",
@@ -272,6 +286,7 @@
     }
   },
   "footer": {
+    "about": "About",
     "signature": "FanaticExplorer · {{year}}",
     "aria": {
       "github": "GitHub",

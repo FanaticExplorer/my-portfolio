@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { Briefcase, FolderGit2, Home, Mail, Menu, X } from 'lucide-react'
+import { Briefcase, FolderGit2, Home, Mail, Menu, UserRound, X } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 
 const navLinkBase = 'inline-flex items-center gap-2 text-sm uppercase tracking-wide transition-colors'
@@ -55,6 +55,10 @@ export function Navbar() {
           <NavLink to="/orders" className={getNavLinkClass}>
             <Briefcase className="h-4 w-4 shrink-0" strokeWidth={1.8} />
             {t('navbar.orders')}
+          </NavLink>
+          <NavLink to="/about" className={getNavLinkClass}>
+            <UserRound className="h-4 w-4 shrink-0" strokeWidth={1.8} />
+            {t('navbar.about')}
           </NavLink>
           <NavLink to="/contact" className={getNavLinkClass}>
             <Mail className="h-4 w-4 shrink-0" strokeWidth={1.8} />
@@ -148,6 +152,14 @@ export function Navbar() {
           >
             <Briefcase className="h-4 w-4 shrink-0" strokeWidth={1.8} />
             {t('navbar.orders')}
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={getNavLinkClass}
+            onClick={() => setIsOpen(false)}
+          >
+            <UserRound className="h-4 w-4 shrink-0" strokeWidth={1.8} />
+            {t('navbar.about')}
           </NavLink>
           <NavLink
             to="/contact"

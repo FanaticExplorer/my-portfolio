@@ -2,6 +2,7 @@
   "app": {
     "notFound": "Stránka nebola nájdená"
   },
+  "availability": "Otvorený pre nové projekty",
   "seo": {
     "home": {
       "title": "FanaticExplorer — Python vývojár",
@@ -19,6 +20,10 @@
       "title": "Kontakt — poslať dopyt",
       "description": "Pošlite dopyt, opíšte úlohu a vyberte kanál: Telegram, GitHub, X alebo email. Odpovedám rýchlo. Vieme dohodnúť termíny a rozpočet bez zbytočných krokov."
     },
+    "about": {
+      "title": "O mne — FanaticExplorer",
+      "description": "O FanaticExplorer: študent aplikovanej informatiky v Nitre, žijem v Bratislave a tvorím Discord boty, Go CLI nástroje a AI nástroje pre agentov."
+    },
     "notFound": {
       "title": "Stránka nebola nájdená — FanaticExplorer",
       "description": "Stránka nebola nájdená. Vráťte sa domov, pozrite projekty alebo mi napíšte. Jazyk zmeníte v menu. Ak potrebujete pomoc, som online a odpoviem rýchlo. Hneď."
@@ -28,6 +33,7 @@
     "home": "Domov",
     "projects": "Projekty",
     "orders": "Zákazky",
+    "about": "O mne",
     "contact": "Kontakt",
     "menu": "Menu",
     "openMenu": "Otvoriť menu",
@@ -108,7 +114,7 @@
       },
       "portfolio": {
         "title": "Portfolio",
-        "description": "Táto stránka. React SPA s Tailwindom, 4-jazyčným i18n a prerenderingom pri build-e pre SEO. Deployment cez GitHub Actions — push do main spustí build, prerender 4 stránok a rsync na VPS pod Caddy. Žiadne manuálne kroky."
+        "description": "Táto stránka. React SPA s Tailwindom, 4-jazyčným i18n a prerenderingom pri build-e pre SEO. Deployment cez GitHub Actions — push do main spustí build, prerender 5 stránok a rsync na VPS pod Caddy. Žiadne manuálne kroky."
       },
       "genius-cleaner": {
         "title": "GeniusCleaner",
@@ -167,6 +173,7 @@
   "orders": {
     "title": "Zákazky",
     "subtitle": "Vybrané projekty automatizácie a botov vytvorené pre klientov. Na platformách Telegram, web a desktop.",
+    "trustLine": "0 arbitráží · Top-4% v Pythone (167 / 4609) · Top-5% vo vývoji botov (93 / 2230)",
     "items": {
       "telegram-channel-parse": {
         "title": "Parsovanie Telegram kanálov",
@@ -246,6 +253,13 @@
       }
     }
   },
+  "about": {
+    "title": "O mne",
+    "p1": "Volám sa Andrew, kód píšem od 12 rokov — začínal som s informatickými olympiádami v Pascale.",
+    "p2": "Najviac mi sedia úlohy, kde treba pochopiť cudzie systémy: zatvorené API, neštandardná automatizácia, boty, ktoré sa správajú ako živí ľudia. Momentálne je hlavný focus produkčné Discord boty, Windows utility v Go a MCP servery pre AI agentov. Stack — Python a Go.",
+    "p3": "Študent aplikovanej informatiky na UKF (Nitra). Žijem na Slovensku: ukrajinčina a ruština — materinské, slovenčina B2, angličtina B2.",
+    "p4": "Otvorený novým zákazkám a ponukám. Najrýchlejšie — Telegram."
+  },
   "contact": {
     "form": {
       "title": "Poslať dopyt",
@@ -272,6 +286,7 @@
     }
   },
   "footer": {
+    "about": "O mne",
     "signature": "FanaticExplorer · {{year}}",
     "aria": {
       "github": "GitHub",

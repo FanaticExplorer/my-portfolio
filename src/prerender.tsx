@@ -10,16 +10,18 @@ import { Orders } from './pages/Orders'
 import { Contact } from './pages/Contact'
 import { Navbar } from './components/ui/Navbar'
 import { Footer } from './components/ui/Footer'
+import { About } from './pages/About'
 
 const pages: Record<string, React.ComponentType> = {
   '/': Home,
   '/projects': Projects,
   '/orders': Orders,
   '/contact': Contact,
+  '/about': About,
 }
 
 const pageLinks: Record<string, string[]> = {
-  '/': ['/projects', '/orders', '/contact'],
+  '/': ['/projects', '/orders', '/contact', '/about'],
 }
 
 function PageShell({ children }: { children: ReactNode }) {

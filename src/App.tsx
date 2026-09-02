@@ -10,6 +10,7 @@ import { Contact } from './pages/Contact'
 import { Orders } from './pages/Orders'
 import { Home as HomePage } from './pages/Home'
 import { Projects } from './pages/Projects'
+import { About } from './pages/About'
 
 function NotFound() {
   const { t } = useTranslation()
@@ -65,6 +66,7 @@ function AnimatedRoutes() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </motion.div>
@@ -77,13 +79,15 @@ function App() {
 
   return (
     <Router>
-      <Helmet htmlAttributes={{ lang: i18n.language }} />
-      <ScrollToTop />
-      <Navbar />
-      <main className="pt-20">
-        <AnimatedRoutes />
-      </main>
-      <Footer />
+      <div className="flex min-h-screen flex-col">
+        <Helmet htmlAttributes={{ lang: i18n.language }} />
+        <ScrollToTop />
+        <Navbar />
+        <main className="flex-1 pt-20">
+          <AnimatedRoutes />
+        </main>
+        <Footer />
+      </div>
     </Router>
   )
 }

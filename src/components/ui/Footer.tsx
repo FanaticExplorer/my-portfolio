@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 export function Footer() {
@@ -8,7 +9,13 @@ export function Footer() {
     <footer className="border-t border-[#2a2a2a] bg-[#0e0e0e]">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-3">
         <div className="text-xs text-[#888888]">{t('footer.signature', { year })}</div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
+          <Link
+            to="/about"
+            className="text-xs text-[#888888] transition hover:text-[#e8b84b]"
+          >
+            {t('footer.about')}
+          </Link>
           <a
             href="https://github.com/FanaticExplorer"
             target="_blank"
