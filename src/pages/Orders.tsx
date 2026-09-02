@@ -3,6 +3,7 @@ import { Badge } from '../components/ui/Badge'
 import { Card } from '../components/ui/Card'
 import { Helmet } from 'react-helmet-async'
 import { useTranslation } from 'react-i18next'
+import { getFreelancehuntProfileUrl } from '../data/links'
 
 export function Orders() {
   const { t, i18n } = useTranslation()
@@ -28,6 +29,14 @@ export function Orders() {
           <p className="mt-3 text-[#888888]">
             {t('orders.subtitle')}
           </p>
+          <a
+            href={getFreelancehuntProfileUrl(i18n.resolvedLanguage || i18n.language)}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-2 block max-w-3xl text-sm text-[#888888] underline decoration-[#e8b84b]/60 underline-offset-4 transition hover:text-[#e8b84b]"
+          >
+            {t('orders.trustLine')}
+          </a>
         </div>
 
         <div className="grid gap-4 md:grid-cols-2">

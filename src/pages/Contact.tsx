@@ -5,6 +5,8 @@ import { Helmet } from 'react-helmet-async'
 import { useTranslation } from 'react-i18next'
 import { AnimatedSection } from '../components/ui/AnimatedSection'
 import { Card } from '../components/ui/Card'
+import { getFreelancehuntProfileUrl } from '../data/links'
+import { AvailabilityBadge } from '../components/ui/AvailabilityBadge'
 
 const itemVariants = {
   hidden: { opacity: 0, y: 16 },
@@ -36,7 +38,7 @@ function XIcon({ className }: { className?: string }) {
 export function Contact() {
   const [loading, setLoading] = useState(false)
   const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle')
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
 
   useEffect(() => {
     if (status === 'success' || status === 'error') {
@@ -84,6 +86,7 @@ export function Contact() {
 
       <AnimatedSection className="px-6 py-10">
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-6">
+          <AvailabilityBadge />
           <div className="grid gap-6 lg:grid-cols-2">
             <motion.div variants={itemVariants}>
               <Card className="p-6">
@@ -210,7 +213,7 @@ export function Contact() {
                     <span>{t('contact.links.github')}</span>
                   </a>
                   <a
-                    href="https://freelancehunt.com/freelancer/FanaticExplorer.html"
+                    href={getFreelancehuntProfileUrl(i18n.resolvedLanguage || i18n.language)}
                     target="_blank"
                     rel="noreferrer"
                     className="group flex items-center gap-3 rounded-lg border border-[#2a2a2a] bg-[#1e1e1e] px-4 py-3 text-sm text-[#f0f0f0] transition hover:border-[#e8b84b] hover:text-[#e8b84b]"

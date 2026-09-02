@@ -7,8 +7,10 @@ import { useTranslation } from 'react-i18next'
 import { AnimatedSection } from '../components/ui/AnimatedSection'
 import { Badge } from '../components/ui/Badge'
 import { Card } from '../components/ui/Card'
+import { AvailabilityBadge } from '../components/ui/AvailabilityBadge'
 import { orders, type Order } from '../data/orders'
 import { projects } from '../data/projects'
+import { getFreelancehuntProfileUrl } from '../data/links'
 
 const itemVariants: Variants = {
   hidden: { opacity: 0, y: 16 },
@@ -203,7 +205,7 @@ function ParticleField() {
 }
 
 export function Home() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
 
   return (
     <div className="bg-[#0e0e0e] text-[#f0f0f0]">
@@ -225,7 +227,7 @@ export function Home() {
               "https://github.com/FanaticExplorer",
               "https://t.me/FanaticExplorer",
               "https://x.com/FanaticExplorer",
-              "https://freelancehunt.com/freelancer/FanaticExplorer.html"
+              getFreelancehuntProfileUrl(i18n.resolvedLanguage || i18n.language)
             ]
           })}
         </script>
@@ -255,7 +257,8 @@ export function Home() {
               {t('home.hero.subtitle')}
             </p>
           </motion.div>
-          <motion.div variants={itemVariants} className="flex flex-wrap gap-3">
+          <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-3">
+            <AvailabilityBadge />
             <Link
               to="/projects"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-[#e8b84b] px-5 py-2.5 text-sm font-semibold text-[#0e0e0e] transition hover:brightness-110"
