@@ -60,10 +60,10 @@ export function Projects() {
                 key={filter.key}
                 type="button"
                 onClick={() => setActiveFilter(filter.key)}
-                className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
+                className={`rounded-full px-4 py-2 text-sm font-semibold transition-all duration-200 hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#e8b84b] ${
                   isActive
-                    ? 'bg-[#e8b84b] text-[#0e0e0e]'
-                    : 'border border-[#2a2a2a] bg-[#1e1e1e] text-[#f0f0f0]'
+                    ? 'bg-[#e8b84b] text-[#0e0e0e] shadow-[0_0_0_1px_#e8b84b] hover:bg-[#c49a2e] hover:shadow-[0_0_14px_rgba(232,184,75,0.3)]'
+                    : 'border border-[#2a2a2a] bg-[#1e1e1e] text-[#f0f0f0] hover:border-[#e8b84b] hover:bg-[#2a2415] hover:text-[#e8b84b] hover:shadow-[0_0_14px_rgba(232,184,75,0.18)]'
                 }`}
               >
                 {filter.label}
