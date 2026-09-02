@@ -42,9 +42,8 @@ export async function prerender(data: { url: string }) {
     return { html: '', links: new Set<string>() }
   }
 
-  const helmetContext: Record<string, unknown> = {}
-  const html = renderToStaticMarkup(
-    <HelmetProvider context={helmetContext}>
+  const renderedHtml = renderToStaticMarkup(
+    <HelmetProvider>
       <StaticRouter location={url}>
         <PageShell>
           <PageComponent />
@@ -53,11 +52,21 @@ export async function prerender(data: { url: string }) {
     </HelmetProvider>,
   )
 
+  const headMarkup = renderedHtml.match(
+    /<title\b[^>]*>[\s\S]*?<\/title>|<script\b[^>]*>[\s\S]*?<\/script>|<(?:meta|link)\b[^>]*\/?>/g,
+  ) || []
+  const titleMarkup = headMarkup.find((markup) => markup.startsWith('<title>'))
+  const title = titleMarkup?.replace(/^<title>|<\/title>$/g, '')
+  const headElements = new Set(headMarkup.filter((markup) => markup !== titleMarkup))
+  const html = headMarkup.reduce((result, markup) => result.replace(markup, ''), renderedHtml)
+
   return {
     html,
     links: new Set(pageLinks[url] || []),
     head: {
       lang: 'en',
+      ...(title && { title }),
+      elements: headElements as unknown as Set<{ type: string; props: Record<string, string> }>,
     },
   }
 }
