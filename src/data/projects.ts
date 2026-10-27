@@ -147,4 +147,11 @@ export const projects: Project[] = [
     githubUrl: 'https://gitlab.com/FanaticExplorer/hyper-emotelab',
     isFeatured: false,
   },
+  {
+    id: 'sp-count-tray',
+    category: 'desktop',
+    techs: ['Go', 'systray', 'Windows', 'REST API'],
+    githubUrl: 'https://gitlab.com/FanaticExplorer/sp-count-tray',
+    isFeatured: false,
+  },
 ]

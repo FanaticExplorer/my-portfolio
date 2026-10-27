@@ -171,6 +171,10 @@
       "hyper-emotelab": {
         "title": "Hyper Export for EmoteLab",
         "description": "EmoteLab mod that adds a second export button and encodes scenes with ffmpeg on every CPU core — same files, roughly 5–6× faster. Only the encoding step is replaced; the game's own export settings keep working."
+      },
+      "sp-count-tray": {
+        "title": "Task Count Tray",
+        "description": "Windows tray icon that shows how many tasks are left in Super Productivity without switching windows — orange for today, blue for the total, green when nothing is left. Left-click opens the app, and the local REST API token is found automatically."
       }
     }
   },
