@@ -39,7 +39,7 @@ deploy:
     - apk add --no-cache curl openssh-client rsync
     - mkdir -p ~/.ssh
     - chmod 700 ~/.ssh
-    - cp "$SSH_PRIVATE_KEY" ~/.ssh/id_deploy
+    - tr -d '\r' < "$SSH_PRIVATE_KEY" > ~/.ssh/id_deploy
     - chmod 600 ~/.ssh/id_deploy
     - ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
   script:
