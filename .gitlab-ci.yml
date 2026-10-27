@@ -9,8 +9,9 @@ workflow:
 
 build:
   stage: build
-  image: node:22
+  image: node:22-alpine
   timeout: 3 minutes
+  interruptible: true
   cache:
     key:
       files:
@@ -18,7 +19,7 @@ build:
     paths:
       - .npm/
   script:
-    - npm ci --cache .npm --prefer-offline
+    - npm ci --cache .npm --prefer-offline --no-audit --no-fund
     - npm run build
   artifacts:
     paths:
@@ -29,6 +30,7 @@ deploy:
   stage: deploy
   image: alpine:3.22
   timeout: 3 minutes
+  interruptible: false
   needs:
     - build
   resource_group: deploy-$CI_COMMIT_REF_SLUG
