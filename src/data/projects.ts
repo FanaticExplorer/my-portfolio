@@ -140,4 +140,11 @@ export const projects: Project[] = [
     githubUrl: 'https://gitlab.com/FanaticExplorer/WindowManager',
     isFeatured: false,
   },
+  {
+    id: 'hyper-emotelab',
+    category: 'desktop',
+    techs: ['C#', 'Unity', 'ffmpeg', 'PowerShell', 'Windows'],
+    githubUrl: 'https://gitlab.com/FanaticExplorer/hyper-emotelab',
+    isFeatured: false,
+  },
 ]

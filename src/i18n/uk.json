@@ -167,6 +167,10 @@
       "homelab": {
         "title": "Homelab",
         "description": "Власна інфраструктура на VPS — Docker, Caddy, Tailscale VPN, Jellyfin, Navidrome, Portainer, моніторинг (Beszel, Uptime Kuma, OpenObserve) і fail2ban. Хостить мої сайти, медіасервер і особисті сервіси."
+      },
+      "hyper-emotelab": {
+        "title": "Hyper Export for EmoteLab",
+        "description": "Мод для EmoteLab, що додає другу кнопку експорту: сцени кодуються ffmpeg на всіх ядрах CPU — ті самі файли, але приблизно у 5–6 разів швидше. Замінюється лише етап кодування, налаштування експорту гри продовжують працювати."
       }
     }
   },

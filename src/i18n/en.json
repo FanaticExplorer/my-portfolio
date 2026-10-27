@@ -167,6 +167,10 @@
       "homelab": {
         "title": "Homelab",
         "description": "Self-hosted infrastructure on a VPS — Docker, Caddy, Tailscale VPN, Jellyfin, Navidrome, Portainer, monitoring (Beszel, Uptime Kuma, OpenObserve), and fail2ban. Runs my websites, media server, and personal services."
+      },
+      "hyper-emotelab": {
+        "title": "Hyper Export for EmoteLab",
+        "description": "EmoteLab mod that adds a second export button and encodes scenes with ffmpeg on every CPU core — same files, roughly 5–6× faster. Only the encoding step is replaced; the game's own export settings keep working."
       }
     }
   },
