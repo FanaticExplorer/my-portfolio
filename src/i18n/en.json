@@ -175,6 +175,10 @@
       "sp-count-tray": {
         "title": "Task Count Tray",
         "description": "Windows tray icon that shows how many tasks are left in Super Productivity without switching windows — orange for today, blue for the total, green when nothing is left. Left-click opens the app, and the local REST API token is found automatically."
+      },
+      "astro-assistant": {
+        "title": "Astro Assistant",
+        "description": "Windows voice assistant: a hotkey starts listening, AssemblyAI transcribes the speech, an OpenAI-compatible model answers through 43 tools (apps, windows, media, OBS, Steam, web search, Super Productivity tasks), and Gemini TTS speaks the reply. Persistent memory and 216 automated tests."
       }
     }
   },

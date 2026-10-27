@@ -154,4 +154,10 @@ export const projects: Project[] = [
     githubUrl: 'https://gitlab.com/FanaticExplorer/sp-count-tray',
     isFeatured: false,
   },
+  {
+    id: 'astro-assistant',
+    category: 'desktop',
+    techs: ['Python', 'OpenAI API', 'LLM', 'TTS', 'STT', 'PySide6'],
+    isFeatured: false,
+  },
 ]

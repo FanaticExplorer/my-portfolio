@@ -175,6 +175,10 @@
       "sp-count-tray": {
         "title": "Task Count Tray",
         "description": "Ikona v systémovej lište Windows, ktorá ukazuje, koľko úloh zostáva v Super Productivity bez prepínania okien — oranžová pre dnešné úlohy, modrá pre celkový počet, zelená, keď nezostáva nič. Ľavý klik otvorí aplikáciu a token lokálneho REST API sa nájde automaticky."
+      },
+      "astro-assistant": {
+        "title": "Astro Assistant",
+        "description": "Hlasový asistent pre Windows: skratka spustí počúvanie, AssemblyAI prepíše reč, model kompatibilný s OpenAI odpovedá cez 43 nástrojov (aplikácie, okná, médiá, OBS, Steam, webové vyhľadávanie, úlohy Super Productivity) a Gemini TTS odpoveď predčíta. Trvalá pamäť a 216 automatických testov."
       }
     }
   },
