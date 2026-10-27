@@ -44,4 +44,5 @@ deploy:
     - ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
   script:
     - rsync -rlgoDzvc --delete -e "ssh -i ~/.ssh/id_deploy -o IdentitiesOnly=yes" dist/ "$SSH_USER@$SSH_HOST:$DEPLOY_PATH"
-    - curl -fsS "https://portfolio.fanaticexplorer.dev" | grep -qi "<title>"
+    - curl -fsS "https://portfolio.fanaticexplorer.dev" -o /tmp/healthcheck.html
+    - grep -qi "<title>" /tmp/healthcheck.html
