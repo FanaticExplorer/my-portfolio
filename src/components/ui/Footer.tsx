@@ -17,7 +17,7 @@ export function Footer() {
             {t('footer.about')}
           </Link>
           <a
-            href="https://gitlab.com/FanaticExplorer"
+            href="https://github.com/FanaticExplorer"
             target="_blank"
             rel="noreferrer"
             className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-[#2a2a2a] text-[#f0f0f0] transition hover:border-[#e8b84b] hover:text-[#e8b84b]"
