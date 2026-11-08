@@ -167,6 +167,18 @@
       "homelab": {
         "title": "Homelab",
         "description": "Собственная инфраструктура на VPS — Docker, Caddy, Tailscale VPN, Jellyfin, Navidrome, Portainer, мониторинг (Beszel, Uptime Kuma, OpenObserve) и fail2ban. Хостит мои сайты, медиасервер и личные сервисы."
+      },
+      "hyper-emotelab": {
+        "title": "Hyper Export for EmoteLab",
+        "description": "Мод для EmoteLab, добавляющий вторую кнопку экспорта: сцены кодируются ffmpeg на всех ядрах CPU — те же файлы, но примерно в 5–6 раз быстрее. Заменяется только этап кодирования, настройки экспорта игры продолжают работать."
+      },
+      "sp-count-tray": {
+        "title": "Task Count Tray",
+        "description": "Иконка в системном трее Windows, которая показывает, сколько задач осталось в Super Productivity, без переключения окон — оранжевая для задач на сегодня, синяя для общего числа, зелёная, когда ничего не осталось. Левый клик открывает приложение, токен локального REST API находится автоматически."
+      },
+      "astro-assistant": {
+        "title": "Astro Assistant",
+        "description": "Голосовой ассистент для Windows: горячая клавиша запускает прослушивание, AssemblyAI распознаёт речь, OpenAI-совместимая модель отвечает через 43 инструмента (приложения, окна, медиа, OBS, Steam, веб-поиск, задачи Super Productivity), а Gemini TTS озвучивает ответ. Постоянная память и 216 автотестов."
       }
     }
   },
